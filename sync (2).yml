@@ -1,0 +1,62 @@
+name: Pharma IR calendar (.ics) build
+
+# ---------------------------------------------------------------------------
+# WHAT THIS DOES  (Option A — no Google Cloud needed)
+# On a schedule (and whenever you click "Run workflow"), GitHub spins up a
+# fresh Linux machine, installs Python + your requirements, runs
+# q4_pipeline.py to regenerate pharma_events.ics, and commits that file back
+# to the repo. Your team subscribes ONCE to the file's URL in Google/Outlook
+# and it auto-refreshes. Nothing is installed on your laptop; no credentials.
+# ---------------------------------------------------------------------------
+
+on:
+  # Run automatically on a timer. Times are in UTC.
+  # "0 6 * * *" = every day at 06:00 UTC. Change the numbers to re-time it.
+  schedule:
+    - cron: "0 6 * * *"
+
+  # Also let you trigger it by hand from the GitHub "Actions" tab.
+  workflow_dispatch:
+
+# Allow the workflow to push the refreshed .ics back into the repo.
+permissions:
+  contents: write
+
+jobs:
+  build-ics:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Copy your repo (the .py files) onto the robot machine.
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Install Python.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. Install the libraries listed in requirements.txt.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Regenerate pharma_events.ics (writes it into the repo folder).
+      - name: Build calendar file
+        run: python q4_pipeline.py
+
+      # 5. Commit the refreshed .ics back to the repo — but only if it changed.
+      #    That single committed file is what your team's calendar subscribes to.
+      - name: Commit updated calendar
+        run: |
+          git config user.name  "ir-calendar-bot"
+          git config user.email "ir-calendar-bot@users.noreply.github.com"
+          git add pharma_events.ics
+          if git diff --staged --quiet; then
+            echo "No calendar changes this run."
+          else
+            git commit -m "Update pharma_events.ics ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi

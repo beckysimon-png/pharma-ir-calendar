@@ -1,0 +1,4 @@
+# Python libraries the GitHub Actions robot installs before running the pipeline.
+# The .ics route only needs to fetch the Q4 JSON endpoints — no Google libraries.
+
+requests>=2.31            # fetching the Q4 JSON endpoints
