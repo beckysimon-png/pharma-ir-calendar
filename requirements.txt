@@ -1,6 +1,0 @@
-# Python libraries the GitHub Actions robot will install before running the pipeline.
-# Pinned to major versions for stability; bump when you want newer releases.
-
-requests>=2.31            # fetching the Q4 JSON endpoints
-google-api-python-client>=2.100   # Google Calendar API client
-google-auth>=2.23         # service-account authentication for Google Calendar
