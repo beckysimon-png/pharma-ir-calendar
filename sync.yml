@@ -1,0 +1,54 @@
+name: Pharma IR calendar sync
+
+# ---------------------------------------------------------------------------
+# WHAT THIS DOES
+# On a schedule (and whenever you click "Run workflow"), GitHub spins up a
+# fresh Linux machine, installs Python + your requirements, writes the Google
+# service-account key from a secret to a file, and runs q4_pipeline.py.
+# Nothing is installed on your own laptop.
+# ---------------------------------------------------------------------------
+
+on:
+  # Run automatically on a timer. Times are in UTC.
+  # "0 6 * * *" = every day at 06:00 UTC. Change the numbers to re-time it.
+  schedule:
+    - cron: "0 6 * * *"
+
+  # Also let you trigger it by hand from the GitHub "Actions" tab.
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Copy your repo (the .py files) onto the robot machine.
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      # 2. Install Python.
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # 3. Install the libraries listed in requirements.txt.
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      # 4. Write the Google service-account key (stored as a GitHub secret)
+      #    to a file the script can read. The file lives only on this
+      #    temporary machine and is thrown away when the job ends.
+      - name: Write Google service account key
+        run: echo "$GOOGLE_SERVICE_ACCOUNT_JSON" > service_account.json
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
+
+      # 5. Run the pipeline.
+      - name: Run pharma calendar sync
+        run: python q4_pipeline.py
+        env:
+          # Your team calendar's ID, also stored as a secret (optional but tidy).
+          CALENDAR_ID: ${{ secrets.CALENDAR_ID }}
