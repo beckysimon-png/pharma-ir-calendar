@@ -2,4 +2,13 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//pharma-ir-calendar//EN
 CALSCALE:GREGORIAN
+BEGIN:VEVENT
+UID:ed32097acafbf6db@ir-calendar
+DTSTAMP:20260918T161444Z
+DTSTART:20261013T133000Z
+DTEND:20261013T143000Z
+SUMMARY:Johnson & Johnson: Johnson & Johnson Third Quarter 2026 Earnings Call
+DESCRIPTION:Type: earnings_call  |  Source: https://www.investor.jnj.com/events-and-presentations/events/event-details/2026/Johnson--Johnson-Third-Quarter-2026-Earnings-Call/default.aspx  |  Webcast: https://event.webcasts.com/starthere.jsp?ei=1772276&tp_key=caff33912e
+URL:https://event.webcasts.com/starthere.jsp?ei=1772276&tp_key=caff33912e
+END:VEVENT
 END:VCALENDAR
