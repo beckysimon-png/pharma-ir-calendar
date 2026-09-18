@@ -4,7 +4,7 @@ PRODID:-//pharma-ir-calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:ed32097acafbf6db@ir-calendar
-DTSTAMP:20260918T172257Z
+DTSTAMP:20260918T174805Z
 DTSTART:20261013T133000Z
 DTEND:20261013T143000Z
 SUMMARY:Johnson & Johnson: Johnson & Johnson Third Quarter 2026 Earnings Call
@@ -13,7 +13,7 @@ URL:https://event.webcasts.com/starthere.jsp?ei=1772276&tp_key=caff33912e
 END:VEVENT
 BEGIN:VEVENT
 UID:f3a8836b0f08ed5b@ir-calendar
-DTSTAMP:20260918T172257Z
+DTSTAMP:20260918T174805Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:AstraZeneca: ASBMR\, AZN Meet the Management\, Virtual
@@ -21,7 +21,7 @@ DESCRIPTION:Type: medical_conference  |  Source: https://www.astrazeneca.com/inv
 END:VEVENT
 BEGIN:VEVENT
 UID:f4a42a924715eb22@ir-calendar
-DTSTAMP:20260918T172257Z
+DTSTAMP:20260918T174805Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:AstraZeneca: ESMO\, AZN Meet the Management\, Madrid\, Hybrid
@@ -29,10 +29,28 @@ DESCRIPTION:Type: medical_conference  |  Source: https://www.astrazeneca.com/con
 END:VEVENT
 BEGIN:VEVENT
 UID:01bf22a4255d23ab@ir-calendar
-DTSTAMP:20260918T172257Z
+DTSTAMP:20260918T174805Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:AstraZeneca: AZN 9M and Q3 2026 results
 DESCRIPTION:Type: earnings_call  |  Source: https://www.astrazeneca.com/investor-relations/events.html
+END:VEVENT
+BEGIN:VEVENT
+UID:5401caac94814853@ir-calendar
+DTSTAMP:20260918T174805Z
+DTSTART:20260928T080000Z
+DTEND:20260928T100000Z
+SUMMARY:Roche: Roche Pharma Day 2026
+DESCRIPTION:Type: capital_markets_day  |  Source: https://www.roche.com/investors/updates/inv-update-2026-09-18
+LOCATION:London UK
+END:VEVENT
+BEGIN:VEVENT
+UID:409550a171399ed2@ir-calendar
+DTSTAMP:20260918T174805Z
+DTSTART:20261022T120000Z
+DTEND:20261022T133000Z
+SUMMARY:Roche: Roche 3rd Quarter Sales 2026 (virtual event)
+DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/events.htm
+LOCATION:Basel\, Switzerland
 END:VEVENT
 END:VCALENDAR
