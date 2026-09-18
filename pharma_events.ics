@@ -4,7 +4,7 @@ PRODID:-//pharma-ir-calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:ed32097acafbf6db@ir-calendar
-DTSTAMP:20260918T174805Z
+DTSTAMP:20260918T182437Z
 DTSTART:20261013T133000Z
 DTEND:20261013T143000Z
 SUMMARY:Johnson & Johnson: Johnson & Johnson Third Quarter 2026 Earnings Call
@@ -13,7 +13,7 @@ URL:https://event.webcasts.com/starthere.jsp?ei=1772276&tp_key=caff33912e
 END:VEVENT
 BEGIN:VEVENT
 UID:f3a8836b0f08ed5b@ir-calendar
-DTSTAMP:20260918T174805Z
+DTSTAMP:20260918T182437Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
 SUMMARY:AstraZeneca: ASBMR\, AZN Meet the Management\, Virtual
@@ -21,7 +21,7 @@ DESCRIPTION:Type: medical_conference  |  Source: https://www.astrazeneca.com/inv
 END:VEVENT
 BEGIN:VEVENT
 UID:f4a42a924715eb22@ir-calendar
-DTSTAMP:20260918T174805Z
+DTSTAMP:20260918T182437Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:AstraZeneca: ESMO\, AZN Meet the Management\, Madrid\, Hybrid
@@ -29,7 +29,7 @@ DESCRIPTION:Type: medical_conference  |  Source: https://www.astrazeneca.com/con
 END:VEVENT
 BEGIN:VEVENT
 UID:01bf22a4255d23ab@ir-calendar
-DTSTAMP:20260918T174805Z
+DTSTAMP:20260918T182437Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:AstraZeneca: AZN 9M and Q3 2026 results
@@ -37,7 +37,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.astrazeneca.com/investor
 END:VEVENT
 BEGIN:VEVENT
 UID:5401caac94814853@ir-calendar
-DTSTAMP:20260918T174805Z
+DTSTAMP:20260918T182437Z
 DTSTART:20260928T080000Z
 DTEND:20260928T100000Z
 SUMMARY:Roche: Roche Pharma Day 2026
@@ -46,11 +46,60 @@ LOCATION:London UK
 END:VEVENT
 BEGIN:VEVENT
 UID:409550a171399ed2@ir-calendar
-DTSTAMP:20260918T174805Z
+DTSTAMP:20260918T182437Z
 DTSTART:20261022T120000Z
 DTEND:20261022T133000Z
 SUMMARY:Roche: Roche 3rd Quarter Sales 2026 (virtual event)
 DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/events.htm
 LOCATION:Basel\, Switzerland
+END:VEVENT
+BEGIN:VEVENT
+UID:fd277ca97bab37d3@ir-calendar
+DTSTAMP:20260918T182437Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:Merck: Investor Event at ESMO 2026
+DESCRIPTION:Type: medical_conference  |  Source: https://www.merck.com/events/investor-event-at-esmo-2026/  |  Webcast: https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4\;F:QS!10100&ShowUUID=36F650A6-18CC-4A5E-9B95-05A12B0E6E2E&LangLocaleID=1033
+URL:https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4\;F:QS!10100&ShowUUID=36F650A6-18CC-4A5E-9B95-05A12B0E6E2E&LangLocaleID=1033
+END:VEVENT
+BEGIN:VEVENT
+UID:9bc882ce281f96a8@ir-calendar
+DTSTAMP:20260918T182437Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:Merck: Q3 2026 Earnings Call
+DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q3-2026-earnings-call/
+END:VEVENT
+BEGIN:VEVENT
+UID:7cd452973bdbace0@ir-calendar
+DTSTAMP:20260918T182437Z
+DTSTART;VALUE=DATE:20270202
+DTEND;VALUE=DATE:20270203
+SUMMARY:Merck: Q4 2026 Earnings Call
+DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q4-2026-earnings-call/
+END:VEVENT
+BEGIN:VEVENT
+UID:408b36af7de8c361@ir-calendar
+DTSTAMP:20260918T182437Z
+DTSTART;VALUE=DATE:20270429
+DTEND;VALUE=DATE:20270430
+SUMMARY:Merck: Q1 2027 Earnings Call
+DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q1-2027-earnings-call/
+END:VEVENT
+BEGIN:VEVENT
+UID:be64e46ac531bc21@ir-calendar
+DTSTAMP:20260918T182437Z
+DTSTART;VALUE=DATE:20270803
+DTEND;VALUE=DATE:20270804
+SUMMARY:Merck: Q2 2027 Earnings Call
+DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q2-2027-earnings-call/
+END:VEVENT
+BEGIN:VEVENT
+UID:dbeed4655ac37594@ir-calendar
+DTSTAMP:20260918T182437Z
+DTSTART;VALUE=DATE:20271028
+DTEND;VALUE=DATE:20271029
+SUMMARY:Merck: Q3 2027 Earnings Call
+DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q3-2027-earnings-call/
 END:VEVENT
 END:VCALENDAR
