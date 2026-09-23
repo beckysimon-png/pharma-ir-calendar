@@ -1,0 +1,2952 @@
+{
+  "future":  [
+    {
+      "month":"September",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, Bank of America Global Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-23T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"23"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, UBS Pharma Bus Tour, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Santander Pharma Day, Virtual [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-29T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"29"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"October",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Call Series, Barclays Cardio Pipeline Investor Call, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-05T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"5"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"ASBMR, AZN Meet the Management, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"ESMO, AZN Meet the Management, Madrid, Hybrid [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-esmo-2026.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/futureEventsMonths/eventslistingmonth_669594900/eventCards/eventslistingcard.event.ics"
+            }
+          }
+        },
+        {
+          "title":"AZN 9M and Q3 2026 results",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"November",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Roadshow, Rothschild, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-02T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call Series, Berenberg CFO Pharma Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Redburn, Boston [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Guggenheim Healthcare Innovation Conference, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, UBS Global Healthcare Conference, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, UBS European Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Group meeting, TD Cowen, New York [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Redburn, New York [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Jefferies Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-16T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"16"
+            },
+            "end":            {
+              "day":"17"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, UBS Global Biopharma Conference, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-11-17T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"17"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"December",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, Rothschild & Co Redburn CEO Conference, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-12-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Berenberg European Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-12-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Citi Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-12-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    }
+  ],
+  "past":  [
+    {
+      "month":"September",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Site Visit, SEB Investor visit, Shanghai [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-17T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"17"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Redburn, New York [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-15T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"15"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call, Jefferies Pharma COO Insight Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-14T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"14"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Barclays, Geneva [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-14T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"14"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Morgan Stanley Global Healthcare Conference, New York [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-14T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"14"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, BNP Paribas Pharma Bus Tour, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call Series, J.P. Morgan CEO Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Bernstein Strategic Decisions Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Kepler Cheuvreux Autumn Conference, Paris [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"ERS, AZN Meet the Management, Virtual [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-ers-2026.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_1672637643/eventCards/eventslistingcard_215210095.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Conference, Jefferies Swiss Healthcare Summit, Zurich [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-02T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Citi Pan European Pharma Bus Tour, Cambridge, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"August",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, Handelsbanken Life Science Innovation Day, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-08-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"July",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":" Conference, SEB Nordic Large Cap Seminar, Stockholm [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-08-18T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"18"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Putnam Investments Bus Tour, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-08-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, TD Cowen Hot Wheels Bus Tour, New York [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-08-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"July",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Roadshow, US East Coast [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-28T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"28"
+            },
+            "end":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Asia, Australia, UK [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-28T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"28"
+            },
+            "end":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Nordics, Europe, Middle East [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-28T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"28"
+            },
+            "end":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, US West Coast & Canada [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-28T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"28"
+            },
+            "end":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"H1 and Q2 2026 results",
+          "href":"/content/astraz/investor-relations/h1-and-q2-2026-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-27T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"27"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_2054829519/eventCards/eventslistingcard_360056370.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Conference, Leerink Partners Therapeutics Forum: I&I and Metabolism, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-14T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"14"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Sustainability Highlights Call, Virtual [Management]",
+          "href":"/content/astraz/investor-relations/sustainability-highlights-call-2026.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-06T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"6"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_2054829519/eventCards/eventslistingcard_1757530796.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Call Series, Bank of America Pipeline call, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-07-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            },
+            "end":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"June",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Call Series, Bank of America Pipeline call, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, J.P. Morgan European Healthcare Forum, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-18T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"18"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Capital World, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-16T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"16"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Citi European Healthcare Conference, London, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Congress, American Diabetes Association - ADA, New Orleans [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Goldman Sachs Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Kepler Cheuvreux, Cologne [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call series, Bernstein R&D call, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-02T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Congress, American Society of Clinical Oncology - ASCO, Chicago [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-asco-2026.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Danske Bank, Stockholm, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-06-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"May",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, db Access European Champions Conference, Frankfurt, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-27T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"27"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Field Trip, Annual Citi Napa Event [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Kepler Cheuvreux, Hamburg [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Reverse Roadshow, Barclays, Cambridge [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-22T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"22"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Field Trip, Buyside-only EU Healthcare trip, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-20T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"20"
+            },
+            "end":            {
+              "day":"22"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call Series, Deutsche Bank, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-21T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"21"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, BNP Paribas, Madrid & Milan [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-20T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"20"
+            },
+            "end":            {
+              "day":"21"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call Series, Morgan Stanley R&D Call Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-20T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"20"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Berenberg R&D Leaders Back to the Future, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Redburn Atlantic Canada Conference [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Call Series, Citi R&D, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Berenberg, Brussels & Amsterdam [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-06T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"6"
+            },
+            "end":            {
+              "day":"7"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Rothschild, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-05T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"5"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Rothschild, Edinburgh [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-05-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"April",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Roadshow, Rothschild, Dublin [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-04-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Q1 2026 Results",
+          "href":"/content/astraz/investor-relations/q1-2026-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-04-29T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"29"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to Calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_559897351/eventCards/eventslistingcard_970521831.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Conference, HSBC Global Investment Summit, Hong Kong [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-04-15T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"15"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Annual General Meeting [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-04-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"March",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, Goldman Sachs Biopharma Innovation Summit, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, BNP Paribas Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-24T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"24"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Danske Bank, Oslo & Copenhagen [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-16T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"16"
+            },
+            "end":            {
+              "day":"17"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Kepler One-Stop-Shop, Luxembourg [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Morgan Stanley CEO Captains of Europe Summit, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Carnegie Healthcare Seminar, Stockholm [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Barclays Annual Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Leerink Partners Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Bank of America Bus Tour, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, UBS European Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-04T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"4"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Daiwa Annual Tokyo Investment Conference, Tokyo [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, TD Cowen Health Care Conference, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-03-02T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"February",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, Capital Group Euro Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Jefferies West Coast Bus Tour, San Francisco [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Goldman Sachs, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, UBS, Frankfurt and Zurich [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, J.P. Morgan, Boston, New York, and Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, J.P. Morgan, Los Angeles and San Francisco [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, SEB, Stockholm [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Morgan Stanley Investment Forum Middle East, Abu Dhabi [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Full Year and Q4 Results",
+          "href":"/content/astraz/investor-relations/full-year-and-q4-2025-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-02-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"January",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"Conference, J.P. Morgan Healthcare Conference, San Francisco [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-01-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            },
+            "end":            {
+              "day":"14"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Swedish Investors Field Trip, Stockholm [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-01-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, SEB Nordic Seminar, Copenhagen [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-01-07T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"7"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Bank of America EU Pharma R&D Call Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-01-06T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"6"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"December",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Conference, Berenberg European Conference, Berkshire [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-12-04T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"4"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Redburn, Miami [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-12-04T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"4"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Bernstein Pan-European Strategic Decision Premium Review Conference, Paris [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-12-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Citi Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-12-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Redburn CEO Fireside Chat, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-12-02T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"CFO meeting, Rothschild, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-12-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"November",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Conference, J.P. Morgan Healthcare CEO Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Jefferies, Middle East [Management] ",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            },
+            "end":            {
+              "day":"28"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Jefferies Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-19T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"19"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, J.P. Morgan UK Leaders Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-18T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"18"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Bernstein Unplugged Fireside Chat, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-18T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"18"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Berenberg, Denver, Santa Fe, Los Angeles, & San Francisco [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-17T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"17"
+            },
+            "end":            {
+              "day":"19"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, UBS European Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Buy-Side Healthcare CEO Summit, Washington DC [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Goldman Sachs China Bus Tour, Shanghai [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Rothschild, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Redburn, Boston & New York City [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Cowen, Chicago, Des Moines, Milwaukee, & Minneapolis [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Berenberg Pharma CFO Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Guggenheim 2nd Annual Innovation Conference, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"AZN 9M and Q3 2025 results",
+          "href":"/content/astraz/investor-relations/9m-and-q3-2025-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-06T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"6"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Goldman Sachs EMEA Global Affairs Summit, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-11-04T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"4"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"October",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"ESMO, AZN Meet the Management, Berlin, Hybrid [Management] ",
+          "href":"/content/astraz/investor-relations/meet-the-management-at-esmo-2025.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-10-20T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"20"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_1232414724/eventCards/eventslistingcard.event.ics"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "month":"September",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Conference, Bank of America Global Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-09-23T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"23"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, UBS Pharma Bus Tour, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-09-15T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"15"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Kepler Cheuvreux Flagship Autumn Conference, Paris [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-09-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Morgan Stanley Global Healthcare Conference, New York [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-09-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, BNP Paribas Exane Healthcare Bus Tour, Cambridge [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-09-05T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"5"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Jefferies Regional Summit, Zurich [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-09-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"August",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"ESC, AZN Meet the Management, Virtual [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-at-esc-2025.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-08-31T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"31"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_1244566204/eventCards/eventslistingcard_1560676093.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Conference, Handelsbanken Life Science Innovation, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-08-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, SEB Nordic Large Cap Seminar, Stockholm [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-08-21T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"21"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Cowen Hot Wheels Bus Tour, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-08-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"July",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Roadshow, Morgan Stanley, East Coast US, Canada East Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            },
+            "end":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, J.P. Morgan, West Coast US, Canada West Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            },
+            "end":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Goldman Sachs, Scandinavia, UK, Asia, Australia, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            },
+            "end":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, UBS, Europe, Middle East, Virtual, [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            },
+            "end":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"H1 and Q2 2025 results",
+          "href":"/content/astraz/investor-relations/h1-and-q2-2025-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-29T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"29"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Leerink Partners Therapeutics Forum, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Deutsche Bank Oncology R&D Leader Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-07-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"June",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Conference, J.P. Morgan European Healthcare Forum, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-06-19T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"19"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Capital World 'Healthcare Summit’, Cambridge [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-06-19T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"19"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Goldman Sachs Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-06-09T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"9"
+            },
+            "end":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"ASCO, AZN Meet The Management, Chicago [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-asco-2025.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-06-02T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"2"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"May",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Sustainability 2024 Highlights Call, Virtual [Management]",
+          "href":"/content/astraz/investor-relations/sustainability-2024-highlights-summary-call.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-28T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"28"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, UBS, Munich [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-28T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"28"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, dbAccess European Champions Conference, Frankfurt [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-27T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"27"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Cowen, Montreal [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Barclays European Leadership Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-22T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"22"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, UBS, Milan [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-21T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"21"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, UBS, Madrid [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-20T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"20"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Berenberg European Conference, New York [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-20T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"20"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Stifel, Paris [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-15T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"15"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Redburn Atlantic Canada Conference, Toronto [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-15T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"15"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Cowen, Minneapolis [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-14T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"14"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Morgan Stanley R&D Call Series, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-13T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Cowen, Chicago [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-13T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Cowen, Denver [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Nordea Equities Health Care Seminar, Stockholm [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Rothschild, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Berenberg R&D Leaders: Back to the Future, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-08T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"8"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Danske Bank, Copenhagen [IR] ",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-07T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"7"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Rothschild, Scotland [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-05-01T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"1"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"April",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Roadshow, Rothschild, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-04-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Q1 2025 results",
+          "href":"/content/astraz/investor-relations/q1-2025-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-04-29T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"29"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_275695853/eventCards/eventslistingcard_1174247334.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Annual General Meeting [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-04-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"March",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Conference, Goldman Sachs Biopharma Innovation Summit, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-27T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"27"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, BNP Paribas Exane Healthcare Conference, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, HSBC Global Investment Summit, Hong Kong [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Carnegie Annual Healthcare Seminar, Stockholm [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Barclays Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Leerink Partners Global Healthcare Conference, Miami [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, Bank of America, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, UBS Healthcare Conference, London [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-04T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"4"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Cowen Annual Healthcare Conference, Boston [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-03-03T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"3"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
+    {
+      "month":"February",
+      "year":"2025",
+      "entry":      [
+        {
+          "title":"Conference, Capital Group 2025 Cross Unit Euro Conference [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Goldman Sachs, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-11T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"11"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Morgan Stanley, Geneva, Frankfurt, Dubai, Riyadh [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Bank of America, Los Angeles, San Francisco [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, J.P. Morgan, Chicago, Milwaukee, New York, Fort Lauderdale [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            },
+            "end":            {
+              "day":"13"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Roadshow, Danske Bank, Stockholm [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-10T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"10"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Full Year and Q4 2024 results",
+          "href":"/content/astraz/investor-relations/full-year-and-q4-2024-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2025-02-06T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"6"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    }
+  ]
+}
