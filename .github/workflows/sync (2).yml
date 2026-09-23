@@ -44,12 +44,19 @@ jobs:
           pip install -r requirements.txt
 
       # 4. Regenerate pharma_events.ics (writes it into the repo folder).
+      #    NOTE: if a company (e.g. AstraZeneca) fails, the pipeline still
+      #    WRITES a good .ics (healthy companies + carried-forward events),
+      #    then exits non-zero so the run shows red as an alert.
       - name: Build calendar file
         run: python q4_pipeline.py
 
       # 5. Commit the refreshed .ics back to the repo — but only if it changed.
-      #    That single committed file is what your team's calendar subscribes to.
+      #    `if: always()` makes this run EVEN WHEN step 4 exited red, so the
+      #    good calendar file still reaches the repo on a partial-failure day.
+      #    The run stays red overall (the alert is preserved), but the Sheet
+      #    and subscribers still get every successful company's fresh events.
       - name: Commit updated calendar
+        if: always()
         run: |
           git config user.name  "ir-calendar-bot"
           git config user.email "ir-calendar-bot@users.noreply.github.com"
