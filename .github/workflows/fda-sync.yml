@@ -1,0 +1,39 @@
+name: FDA AdComm calendar (.ics) build
+
+on:
+  schedule:
+    - cron: "30 6 * * *"     # 30 min after pharma, so they never collide on push
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-fda-ics:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      # fda_pipeline.py is standalone (stdlib only) — no requirements needed.
+      - name: Build FDA calendar file
+        run: python fda_pipeline.py
+
+      - name: Commit updated FDA calendar
+        if: always()          # commit even when the run exits red (same fix as pharma)
+        run: |
+          git config user.name  "ir-calendar-bot"
+          git config user.email "ir-calendar-bot@users.noreply.github.com"
+          git pull --rebase --autostash origin main || true
+          git add fda_events.ics
+          if git diff --staged --quiet; then
+            echo "No FDA calendar changes this run."
+          else
+            git commit -m "Update fda_events.ics ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi
