@@ -30,7 +30,7 @@ jobs:
           git config user.name  "ir-calendar-bot"
           git config user.email "ir-calendar-bot@users.noreply.github.com"
           git pull --rebase --autostash origin main || true
-          git add fda_events.ics
+          git add fda_events.ics fda_enrich_cache.json
           if git diff --staged --quiet; then
             echo "No FDA calendar changes this run."
           else
