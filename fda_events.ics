@@ -4,7 +4,7 @@ PRODID:-//pharma-ir-calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:8f2bc701b3513776@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -14,7 +14,7 @@ URL:https://www.federalregister.gov/documents/2026/09/09/2026-18349/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:262907e8854127f7@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260701
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee
@@ -24,7 +24,7 @@ URL:https://www.federalregister.gov/documents/2026/07/24/2026-15017/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:c5e2182222f2b2c4@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260630
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee
@@ -34,7 +34,7 @@ URL:https://www.federalregister.gov/documents/2026/07/24/2026-15016/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:3b0c70a2de1da6f4@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260730
 DTEND;VALUE=DATE:20260731
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee
@@ -44,7 +44,7 @@ URL:https://www.federalregister.gov/documents/2026/07/08/2026-13810/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:dd2fd3acad79a23f@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260729
 DTEND;VALUE=DATE:20260730
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee
@@ -54,7 +54,7 @@ URL:https://www.federalregister.gov/documents/2026/06/29/2026-13096/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:009ece6308cbeddb@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260618
 DTEND;VALUE=DATE:20260619
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -64,7 +64,7 @@ URL:https://www.federalregister.gov/documents/2026/05/22/2026-10321/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:3c311f595102718c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260529
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -74,7 +74,7 @@ URL:https://www.federalregister.gov/documents/2026/04/27/2026-08122/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:8bfa2875424a4ad2@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260723
 DTEND;VALUE=DATE:20260724
 SUMMARY:FDA CDER: Pharmacy Compounding Advisory Committee
@@ -84,7 +84,7 @@ URL:https://www.federalregister.gov/documents/2026/04/16/2026-07361/pharmacy-com
 END:VEVENT
 BEGIN:VEVENT
 UID:fbc0f4054442950c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -94,7 +94,7 @@ URL:https://www.federalregister.gov/documents/2026/03/09/2026-04497/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:54507363dedc4ead@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20260312
 DTEND;VALUE=DATE:20260313
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -104,7 +104,7 @@ URL:https://www.federalregister.gov/documents/2026/02/12/2026-02787/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:91365a16cb8a93bd@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20251009
 DTEND;VALUE=DATE:20251010
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -114,7 +114,7 @@ URL:https://www.federalregister.gov/documents/2025/09/19/2025-18185/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:adbdd2416a2440cd@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250718
 DTEND;VALUE=DATE:20250719
 SUMMARY:FDA CDER: Psychopharmacologic Drugs Advisory Committee
@@ -124,7 +124,7 @@ URL:https://www.federalregister.gov/documents/2025/06/17/2025-10989/psychopharma
 END:VEVENT
 BEGIN:VEVENT
 UID:eb3d07cbf52f37ba@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250717
 DTEND;VALUE=DATE:20250718
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -134,7 +134,7 @@ URL:https://www.federalregister.gov/documents/2025/06/16/2025-10855/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:fff6f5389ecb0d04@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250522
 DTEND;VALUE=DATE:20250523
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — selection of the 2025-2026 Formula for COVID-19 vaccines for use in the United States
@@ -144,7 +144,7 @@ URL:https://www.federalregister.gov/documents/2025/05/08/2025-08083/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:cdc28906e283903d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250520
 DTEND;VALUE=DATE:20250521
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -154,7 +154,7 @@ URL:https://www.federalregister.gov/documents/2025/05/08/2025-08060/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:543c3bb4c67044f5@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250224
 DTEND;VALUE=DATE:20250225
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -164,7 +164,7 @@ URL:https://www.federalregister.gov/documents/2024/12/30/2024-31309/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:3502a2534b166d14@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250228
 DTEND;VALUE=DATE:20250301
 SUMMARY:FDA CDER: Combined Food and Drug Administration and Sponsor Oncologic Drugs Advisory Committee Briefing Document — whether a combined advisory committee briefing document may be appropriate for their ap...
@@ -174,7 +174,7 @@ URL:https://www.federalregister.gov/documents/2024/12/30/2024-31305/combined-foo
 END:VEVENT
 BEGIN:VEVENT
 UID:0dceaeb0f8dba25d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250205
 DTEND;VALUE=DATE:20250206
 SUMMARY:FDA CDER: Joint Meeting of the Drug Safety and Risk Management Advisory Committee and the Anesthetic and Analgesic Drug Products Advisory Committee
@@ -184,7 +184,7 @@ URL:https://www.federalregister.gov/documents/2024/12/09/2024-28811/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:cb1acdea548d06e0@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20250110
 DTEND;VALUE=DATE:20250111
 SUMMARY:FDA CDER: Anesthetic and Analgesic Drug Products Advisory Committee
@@ -194,7 +194,7 @@ URL:https://www.federalregister.gov/documents/2024/12/02/2024-28210/anesthetic-a
 END:VEVENT
 BEGIN:VEVENT
 UID:8f27411fd66fefc8@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241204
 DTEND;VALUE=DATE:20241205
 SUMMARY:FDA CDER: Pharmacy Compounding Advisory Committee
@@ -204,7 +204,7 @@ URL:https://www.federalregister.gov/documents/2024/10/25/2024-24828/pharmacy-com
 END:VEVENT
 BEGIN:VEVENT
 UID:7c9d192c26698d7f@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241212
 DTEND;VALUE=DATE:20241213
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — Considerations for Respiratory Syncytial Virus (RSV) Vaccine Safety in Pediatric Popula...
@@ -214,7 +214,7 @@ URL:https://www.federalregister.gov/documents/2024/10/24/2024-24713/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:d4e0e3887c76c55b@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241031
 DTEND;VALUE=DATE:20241101
 SUMMARY:FDA CDER: Endocrinologic and Metabolic Drugs Advisory Committee
@@ -224,7 +224,7 @@ URL:https://www.federalregister.gov/documents/2024/10/02/2024-22570/endocrinolog
 END:VEVENT
 BEGIN:VEVENT
 UID:54ae5c987880fa5f@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241121
 DTEND;VALUE=DATE:20241122
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee
@@ -234,7 +234,7 @@ URL:https://www.federalregister.gov/documents/2024/10/02/2024-22561/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:381c7f29857a6593@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241010
 DTEND;VALUE=DATE:20241011
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — three separate topics
@@ -244,7 +244,7 @@ URL:https://www.federalregister.gov/documents/2024/09/19/2024-21431/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:954b81662a28cd37@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241029
 DTEND;VALUE=DATE:20241030
 SUMMARY:FDA CDER: Pharmacy Compounding Advisory Committee
@@ -254,7 +254,7 @@ URL:https://www.federalregister.gov/documents/2024/09/18/2024-21241/pharmacy-com
 END:VEVENT
 BEGIN:VEVENT
 UID:f55927150244476a@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241010
 DTEND;VALUE=DATE:20241011
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -264,7 +264,7 @@ URL:https://www.federalregister.gov/documents/2024/09/06/2024-20062/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:c395049ce833e1dc@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240926
 DTEND;VALUE=DATE:20240927
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -274,7 +274,7 @@ URL:https://www.federalregister.gov/documents/2024/08/23/2024-18970/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:981f1742c27141ad@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240920
 DTEND;VALUE=DATE:20240921
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — considerations related to the use of pertussis controlled human infection models (CHIMs...
@@ -284,7 +284,7 @@ URL:https://www.federalregister.gov/documents/2024/08/20/2024-18617/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:c191c5866b2c88b1@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240913
 DTEND;VALUE=DATE:20240914
 SUMMARY:FDA CDER: Gastrointestinal Drugs Advisory Committee
@@ -294,7 +294,7 @@ URL:https://www.federalregister.gov/documents/2024/08/12/2024-17926/gastrointest
 END:VEVENT
 BEGIN:VEVENT
 UID:19814cc0368b84b3@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20241119
 DTEND;VALUE=DATE:20241120
 SUMMARY:FDA CDER: Joint Meeting of the Drug Safety and Risk Management Advisory Committee and the Psychopharmacologic Drugs Advisory Committee
@@ -304,7 +304,7 @@ URL:https://www.federalregister.gov/documents/2024/08/09/2024-17752/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:1f6ca383a9117a0f@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240909
 DTEND;VALUE=DATE:20240910
 SUMMARY:FDA CDER: Antimicrobial Drugs Advisory Committee
@@ -314,7 +314,7 @@ URL:https://www.federalregister.gov/documents/2024/08/08/2024-17642/antimicrobia
 END:VEVENT
 BEGIN:VEVENT
 UID:08a4fb7e2fd522be@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240725
 DTEND;VALUE=DATE:20240726
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -324,7 +324,7 @@ URL:https://www.federalregister.gov/documents/2024/06/07/2024-12532/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:ce1b83f51efd3332@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240605
 DTEND;VALUE=DATE:20240606
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -334,7 +334,7 @@ URL:https://www.federalregister.gov/documents/2024/05/22/2024-11216/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:c0b3d5f9237c3cc3@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240604
 DTEND;VALUE=DATE:20240605
 SUMMARY:FDA CDER: Psychopharmacologic Drugs Advisory Committee
@@ -344,7 +344,7 @@ URL:https://www.federalregister.gov/documents/2024/05/08/2024-10053/psychopharma
 END:VEVENT
 BEGIN:VEVENT
 UID:310fb70a811762fa@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240610
 DTEND;VALUE=DATE:20240611
 SUMMARY:FDA CDER: Peripheral and Central Nervous System Drugs Advisory Committee
@@ -354,7 +354,7 @@ URL:https://www.federalregister.gov/documents/2024/05/08/2024-10051/peripheral-a
 END:VEVENT
 BEGIN:VEVENT
 UID:b347fcda1a20eeab@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240524
 DTEND;VALUE=DATE:20240525
 SUMMARY:FDA CDER: Endocrinologic and Metabolic Drugs Advisory Committee
@@ -364,7 +364,7 @@ URL:https://www.federalregister.gov/documents/2024/04/29/2024-09158/endocrinolog
 END:VEVENT
 BEGIN:VEVENT
 UID:cb0a1ab442e87791@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240223
 DTEND;VALUE=DATE:20240224
 SUMMARY:FDA CDER: Final Decision on Withdrawal of PEPAXTO (melphalan flufenamide) Following Appeal of the Proposal To Withdraw Approval — NDA 214383
@@ -374,7 +374,7 @@ URL:https://www.federalregister.gov/documents/2024/04/18/2024-08274/final-decisi
 END:VEVENT
 BEGIN:VEVENT
 UID:d6f28244b4174ad2@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240522
 DTEND;VALUE=DATE:20240523
 SUMMARY:FDA CDER: Pediatric Oncology Subcommittee of the Oncologic Drugs Advisory Committee
@@ -384,7 +384,7 @@ URL:https://www.federalregister.gov/documents/2024/04/05/2024-07273/pediatric-on
 END:VEVENT
 BEGIN:VEVENT
 UID:c231ced996793475@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240412
 DTEND;VALUE=DATE:20240413
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -394,7 +394,7 @@ URL:https://www.federalregister.gov/documents/2024/03/26/2024-06314/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:76d1720e7b8e003c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240509
 DTEND;VALUE=DATE:20240510
 SUMMARY:FDA CBER: Blood Products Advisory Committee
@@ -404,7 +404,7 @@ URL:https://www.federalregister.gov/documents/2024/03/11/2024-05074/blood-produc
 END:VEVENT
 BEGIN:VEVENT
 UID:a125486b5b33a8da@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240516
 DTEND;VALUE=DATE:20240517
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — selection of strain(s) to be included in the 2024-2025 Formula for COVID-19 vaccines
@@ -414,7 +414,7 @@ URL:https://www.federalregister.gov/documents/2024/03/04/2024-04523/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:6411968d36d44a2e@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240305
 DTEND;VALUE=DATE:20240306
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — selection of strains to be included in the influenza virus vaccines for the 2024 to 202...
@@ -424,7 +424,7 @@ URL:https://www.federalregister.gov/documents/2024/02/09/2024-02709/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:7afefce3879997c4@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240315
 DTEND;VALUE=DATE:20240316
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -434,7 +434,7 @@ URL:https://www.federalregister.gov/documents/2024/02/05/2024-02229/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:e07bf23284ad1c94@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240314
 DTEND;VALUE=DATE:20240315
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -444,7 +444,7 @@ URL:https://www.federalregister.gov/documents/2024/01/30/2024-01797/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:04953f320a554c7d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20240305
 DTEND;VALUE=DATE:20240306
 SUMMARY:FDA CDER: Medical Imaging Drugs Advisory Committee
@@ -454,7 +454,7 @@ URL:https://www.federalregister.gov/documents/2024/01/19/2024-01016/medical-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:509c9e4884fe7b1d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20231116
 DTEND;VALUE=DATE:20231117
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -464,7 +464,7 @@ URL:https://www.federalregister.gov/documents/2023/10/04/2023-21984/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:e75a13dc5ee04b2a@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20231117
 DTEND;VALUE=DATE:20231118
 SUMMARY:FDA CDER: Pulmonary-Allergy Drugs Advisory Committee
@@ -474,17 +474,17 @@ URL:https://www.federalregister.gov/documents/2023/09/08/2023-19407/pulmonary-al
 END:VEVENT
 BEGIN:VEVENT
 UID:3e8af9861f84d999@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20231031
 DTEND;VALUE=DATE:20231101
-SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Vertex Pharmaceuticals — BLA 125787
+SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Vertex — BLA 125787
 DESCRIPTION:Agenda: The Food and Drug Administration (FDA) announces a forthcoming public advisory committee meeting of the Cellular\, Tissue\, and Gene Therapies Advisory Committee (the Committee). The general function of the Committee is to provide advice and recommendations to FDA on regulatory issues. On October 31\, 2023\, the Committee will discuss and make recommendations on biologics license application (BLA) 125787 from Vertex Pharmaceuticals\, Inc. for exagamglogene autotemcel (exa-cel). The applicant has requested an indication for the treatment of sickle cell disease in patients 12 years and older with rec...  |  Type: advisory_committee  |  Docket: Docket No. FDA-2023-N-1190  |  Source: https://www.federalregister.gov/documents/2023/09/07/2023-19284/cellular-tissue-and-gene-therapies-advisory-committee-notice-of-meeting-establishment-of-a-public
 LOCATION:Silver Spring\, MD / Virtual
 URL:https://www.federalregister.gov/documents/2023/09/07/2023-19284/cellular-tissue-and-gene-therapies-advisory-committee-notice-of-meeting-establishment-of-a-public
 END:VEVENT
 BEGIN:VEVENT
 UID:5b9f8b308db1a324@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230921
 DTEND;VALUE=DATE:20230922
 SUMMARY:FDA CDER: Endocrinologic and Metabolic Drugs Advisory Committee
@@ -494,7 +494,7 @@ URL:https://www.federalregister.gov/documents/2023/08/24/2023-18250/endocrinolog
 END:VEVENT
 BEGIN:VEVENT
 UID:69dbb8edf1b5d827@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20231005
 DTEND;VALUE=DATE:20231006
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — Strain Selection for the Influenza Virus Vaccines for the 2024 Southern Hemisphere Infl...
@@ -504,7 +504,7 @@ URL:https://www.federalregister.gov/documents/2023/08/24/2023-18243/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:8674faec720b3dbe@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20231005
 DTEND;VALUE=DATE:20231006
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -514,7 +514,7 @@ URL:https://www.federalregister.gov/documents/2023/08/22/2023-18024/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:064bc32675d41f34@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20231004
 DTEND;VALUE=DATE:20231005
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -524,7 +524,7 @@ URL:https://www.federalregister.gov/documents/2023/08/16/2023-17510/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:9214d3fb038b4760@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230927
 DTEND;VALUE=DATE:20230928
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — BrainStorm Therapeutics — BLA 125782
@@ -534,7 +534,7 @@ URL:https://www.federalregister.gov/documents/2023/07/27/2023-15923/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:4492860ef4597a6e@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230911
 DTEND;VALUE=DATE:20230912
 SUMMARY:FDA CDER: Nonprescription Drugs Advisory Committee
@@ -544,7 +544,7 @@ URL:https://www.federalregister.gov/documents/2023/07/12/2023-14713/nonprescript
 END:VEVENT
 BEGIN:VEVENT
 UID:00110f886c330a25@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230801
 DTEND;VALUE=DATE:20230802
 SUMMARY:FDA CDER: Medical Imaging Drugs Advisory Committee
@@ -554,7 +554,7 @@ URL:https://www.federalregister.gov/documents/2023/07/10/2023-14460/medical-imag
 END:VEVENT
 BEGIN:VEVENT
 UID:68023a11b5c86c12@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230913
 DTEND;VALUE=DATE:20230914
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -564,7 +564,7 @@ URL:https://www.federalregister.gov/documents/2023/07/03/2023-14037/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:11db4f1751942ce2@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230628
 DTEND;VALUE=DATE:20230629
 SUMMARY:FDA CDER: Endocrinologic and Metabolic Drugs Advisory Committee
@@ -574,7 +574,7 @@ URL:https://www.federalregister.gov/documents/2023/05/25/2023-11164/endocrinolog
 END:VEVENT
 BEGIN:VEVENT
 UID:e234ccc7aae57758@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230616
 DTEND;VALUE=DATE:20230617
 SUMMARY:FDA CDER: Pediatric Oncology Subcommittee of the Oncologic Drugs Advisory Committee
@@ -584,7 +584,7 @@ URL:https://www.federalregister.gov/documents/2023/05/11/2023-10051/pediatric-on
 END:VEVENT
 BEGIN:VEVENT
 UID:e8de8bee3a0c41b4@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230615
 DTEND;VALUE=DATE:20230616
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — selection of strain(s) to be included in the periodic updated COVID-19 vaccines for the...
@@ -594,7 +594,7 @@ URL:https://www.federalregister.gov/documents/2023/05/04/2023-09490/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:942611c28f52b1fa@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230608
 DTEND;VALUE=DATE:20230609
 SUMMARY:FDA CDER: Antimicrobial Drugs Advisory Committee
@@ -604,7 +604,7 @@ URL:https://www.federalregister.gov/documents/2023/05/03/2023-09321/antimicrobia
 END:VEVENT
 BEGIN:VEVENT
 UID:584ad4cc812bf61d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230518
 DTEND;VALUE=DATE:20230519
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — Pfizer — BLA 125768
@@ -614,7 +614,7 @@ URL:https://www.federalregister.gov/documents/2023/04/11/2023-07550/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:1d3c3f7f046ac0c4@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230609
 DTEND;VALUE=DATE:20230610
 SUMMARY:FDA CDER: Peripheral and Central Nervous System Drugs Advisory Committee
@@ -624,7 +624,7 @@ URL:https://www.federalregister.gov/documents/2023/04/11/2023-07526/peripheral-a
 END:VEVENT
 BEGIN:VEVENT
 UID:69d0cb863b44e8e5@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230512
 DTEND;VALUE=DATE:20230513
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Sarepta Therapeutics — BLA 125781
@@ -634,7 +634,7 @@ URL:https://www.federalregister.gov/documents/2023/04/11/2023-07518/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:ae8a0431ab35bce5@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230414
 DTEND;VALUE=DATE:20230415
 SUMMARY:FDA CDER: Joint Meeting of the Psychopharmacologic Drugs Advisory Committee and the Peripheral and Central Nervous System Drugs Advisory Committee
@@ -644,7 +644,7 @@ URL:https://www.federalregister.gov/documents/2023/03/30/2023-06577/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:c7321d139a457f0d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230509
 DTEND;VALUE=DATE:20230510
 SUMMARY:FDA CDER: Joint Meeting of the Nonprescription Drugs Advisory Committee and the Obstetrics\, Reproductive and Urologic Drugs Advisory Committee
@@ -654,7 +654,7 @@ URL:https://www.federalregister.gov/documents/2023/03/29/2023-06524/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:bee95d93964a86c4@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230511
 DTEND;VALUE=DATE:20230512
 SUMMARY:FDA CDER: Pulmonary-Allergy Drugs Advisory Committee
@@ -664,7 +664,7 @@ URL:https://www.federalregister.gov/documents/2023/03/29/2023-06481/pulmonary-al
 END:VEVENT
 BEGIN:VEVENT
 UID:43471ed147d3feb3@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230417
 DTEND;VALUE=DATE:20230418
 SUMMARY:FDA CDER: Antimicrobial Drugs Advisory Committee
@@ -674,7 +674,7 @@ URL:https://www.federalregister.gov/documents/2023/03/13/2023-05068/antimicrobia
 END:VEVENT
 BEGIN:VEVENT
 UID:98a532996fffb662@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230519
 DTEND;VALUE=DATE:20230520
 SUMMARY:FDA CDER: Gastrointestinal Drugs Advisory Committee
@@ -684,7 +684,7 @@ URL:https://www.federalregister.gov/documents/2023/03/13/2023-05066/gastrointest
 END:VEVENT
 BEGIN:VEVENT
 UID:4ff7cd42b5e81983@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230426
 DTEND;VALUE=DATE:20230427
 SUMMARY:FDA CBER: Blood Products Advisory Committee
@@ -694,7 +694,7 @@ URL:https://www.federalregister.gov/documents/2023/03/02/2023-04270/blood-produc
 END:VEVENT
 BEGIN:VEVENT
 UID:1e802b0057bc155e@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230428
 DTEND;VALUE=DATE:20230429
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -704,7 +704,7 @@ URL:https://www.federalregister.gov/documents/2023/03/02/2023-04268/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:fa85b49103e42bd8@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230316
 DTEND;VALUE=DATE:20230317
 SUMMARY:FDA CDER: Antimicrobial Drugs Advisory Committee
@@ -714,7 +714,7 @@ URL:https://www.federalregister.gov/documents/2023/02/27/2023-03971/antimicrobia
 END:VEVENT
 BEGIN:VEVENT
 UID:40233d9687add411@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230419
 DTEND;VALUE=DATE:20230420
 SUMMARY:FDA CDER: Anesthetic and Analgesic Drug Products Advisory Committee
@@ -724,7 +724,7 @@ URL:https://www.federalregister.gov/documents/2023/02/17/2023-03370/anesthetic-a
 END:VEVENT
 BEGIN:VEVENT
 UID:f57f7319263ee3a0@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230307
 DTEND;VALUE=DATE:20230308
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — selection of strains to be included in the influenza virus vaccines for the 2023-2024 i...
@@ -734,7 +734,7 @@ URL:https://www.federalregister.gov/documents/2023/02/09/2023-02742/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:0f55a222d072634a@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230228
 DTEND;VALUE=DATE:20230301
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee
@@ -744,7 +744,7 @@ URL:https://www.federalregister.gov/documents/2023/02/01/2023-02096/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:16baf1dc0762b923@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230320
 DTEND;VALUE=DATE:20230321
 SUMMARY:FDA CDER: Joint Meeting of the Nonprescription Drugs Advisory Committee and the Anesthetic and Analgesic Drug Products Advisory Committee
@@ -754,7 +754,7 @@ URL:https://www.federalregister.gov/documents/2023/01/30/2023-01761/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:08756be047fe328c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230309
 DTEND;VALUE=DATE:20230310
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -764,7 +764,7 @@ URL:https://www.federalregister.gov/documents/2023/01/26/2023-01553/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:8f1080fd62eb6c8c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230322
 DTEND;VALUE=DATE:20230323
 SUMMARY:FDA CDER: Peripheral and Central Nervous System Drugs Advisory Committee
@@ -774,7 +774,7 @@ URL:https://www.federalregister.gov/documents/2023/01/24/2023-01216/peripheral-a
 END:VEVENT
 BEGIN:VEVENT
 UID:3ba7393e12bdeafb@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230328
 DTEND;VALUE=DATE:20230330
 SUMMARY:FDA CDER: Joint Meeting of the Drug Safety and Risk Management Advisory Committee and the Dermatologic and Ophthalmic Drugs Advisory Committee
@@ -784,7 +784,7 @@ URL:https://www.federalregister.gov/documents/2023/01/18/2023-00795/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:1a8a00eff91e19e6@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230215
 DTEND;VALUE=DATE:20230216
 SUMMARY:FDA CDER: Joint Meeting of the Nonprescription Drugs Advisory Committee and the Anesthetic and Analgesic Drug Products Advisory Committee
@@ -794,7 +794,7 @@ URL:https://www.federalregister.gov/documents/2023/01/09/2023-00110/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:40083daca20b2343@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230209
 DTEND;VALUE=DATE:20230210
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -804,7 +804,7 @@ URL:https://www.federalregister.gov/documents/2022/12/22/2022-27834/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:7cb84f2e484da9de@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230126
 DTEND;VALUE=DATE:20230127
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — future vaccination regimens addressing COVID-19
@@ -814,7 +814,7 @@ URL:https://www.federalregister.gov/documents/2022/12/19/2022-27428/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:9873ad03d0169c20@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230124
 DTEND;VALUE=DATE:20230125
 SUMMARY:FDA CDER: Antimicrobial Drugs Advisory Committee
@@ -824,7 +824,7 @@ URL:https://www.federalregister.gov/documents/2022/11/25/2022-25643/antimicrobia
 END:VEVENT
 BEGIN:VEVENT
 UID:1c54682f7fb9ac4f@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20230109
 DTEND;VALUE=DATE:20230110
 SUMMARY:FDA CDER: Dermatologic and Ophthalmic Drugs Advisory Committee
@@ -834,7 +834,7 @@ URL:https://www.federalregister.gov/documents/2022/11/25/2022-25642/dermatologic
 END:VEVENT
 BEGIN:VEVENT
 UID:79c5ac36a791f697@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221109
 DTEND;VALUE=DATE:20221110
 SUMMARY:FDA CDER: Pulmonary-Allergy Drugs Advisory Committee
@@ -844,7 +844,7 @@ URL:https://www.federalregister.gov/documents/2022/10/19/2022-22700/pulmonary-al
 END:VEVENT
 BEGIN:VEVENT
 UID:d8cd3401809d072d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221208
 DTEND;VALUE=DATE:20221209
 SUMMARY:FDA CBER: Blood Products Advisory Committee
@@ -854,7 +854,7 @@ URL:https://www.federalregister.gov/documents/2022/10/18/2022-22612/blood-produc
 END:VEVENT
 BEGIN:VEVENT
 UID:1402abde1b94ce30@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221214
 DTEND;VALUE=DATE:20221215
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -864,7 +864,7 @@ URL:https://www.federalregister.gov/documents/2022/10/06/2022-21775/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:93462d793b2809cc@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221213
 DTEND;VALUE=DATE:20221214
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -874,7 +874,7 @@ URL:https://www.federalregister.gov/documents/2022/10/06/2022-21769/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:978ce84f339210c9@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221122
 DTEND;VALUE=DATE:20221123
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
@@ -884,7 +884,7 @@ URL:https://www.federalregister.gov/documents/2022/09/22/2022-20524/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:0d00a9242e34ae17@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221116
 DTEND;VALUE=DATE:20221117
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -894,7 +894,7 @@ URL:https://www.federalregister.gov/documents/2022/09/19/2022-20198/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:010b0ec88bb5c9ac@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221118
 DTEND;VALUE=DATE:20221119
 SUMMARY:FDA CDER: Joint Meeting of the Nonprescription Drugs Advisory Committee and the Obstetrics\, Reproductive and Urologic Drugs Advisory Committee
@@ -904,7 +904,7 @@ URL:https://www.federalregister.gov/documents/2022/09/13/2022-19718/joint-meetin
 END:VEVENT
 BEGIN:VEVENT
 UID:917e2f5555a6e56d@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221006
 DTEND;VALUE=DATE:20221007
 SUMMARY:FDA CDER: Pulmonary-Allergy Drugs Advisory Committee
@@ -914,7 +914,7 @@ URL:https://www.federalregister.gov/documents/2022/09/08/2022-19385/pulmonary-al
 END:VEVENT
 BEGIN:VEVENT
 UID:614fbc296c648e6b@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221108
 DTEND;VALUE=DATE:20221109
 SUMMARY:FDA CDER: Pulmonary-Allergy Drugs Advisory Committee
@@ -924,7 +924,7 @@ URL:https://www.federalregister.gov/documents/2022/09/06/2022-19159/pulmonary-al
 END:VEVENT
 BEGIN:VEVENT
 UID:a18679a8b972bf1c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221026
 DTEND;VALUE=DATE:20221027
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee
@@ -934,7 +934,7 @@ URL:https://www.federalregister.gov/documents/2022/09/06/2022-19156/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:4763d7d9f9927c6c@ir-calendar
-DTSTAMP:20260923T174409Z
+DTSTAMP:20260923T180814Z
 DTSTART;VALUE=DATE:20221028
 DTEND;VALUE=DATE:20221029
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee
