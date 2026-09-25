@@ -3,8 +3,18 @@ VERSION:2.0
 PRODID:-//pharma-ir-calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
+UID:b5cef16608e548f9@ir-calendar
+DTSTAMP:20260925T064331Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:FDA CDER: Dermatologic and Ophthalmic Drugs Advisory Committee — Sydnexis — Atropine Sulfate Ophthalmic \, 0.01% (NDA 219694)
+DESCRIPTION:Agenda: The Food and Drug Administration (FDA) announces a forthcoming public advisory committee meeting of the Dermatologic and Ophthalmic Drugs Advisory Committee (the Committee). The general function of the Committee is to provide advice and recommendations to FDA on regulatory issues. The meeting will be open to the public. FDA is establishing a docket for public comment on this document.  |  Type: advisory_committee  |  Docket: Docket No. FDA-2026-N-10606  |  Source: https://www.federalregister.gov/documents/2026/09/25/2026-19700/dermatologic-and-ophthalmic-drugs-advisory-committee-notice-of-meeting-establishment-of-a-public
+LOCATION:Silver Spring\, MD / Virtual
+URL:https://www.federalregister.gov/documents/2026/09/25/2026-19700/dermatologic-and-ophthalmic-drugs-advisory-committee-notice-of-meeting-establishment-of-a-public
+END:VEVENT
+BEGIN:VEVENT
 UID:262907e8854127f7@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20260630
 DTEND;VALUE=DATE:20260701
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Vusolimogene Oderparepvec (BLA 125827)
@@ -14,7 +24,7 @@ URL:https://www.federalregister.gov/documents/2026/07/24/2026-15017/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:c5e2182222f2b2c4@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20260629
 DTEND;VALUE=DATE:20260630
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee
@@ -24,7 +34,7 @@ URL:https://www.federalregister.gov/documents/2026/07/24/2026-15016/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:3b0c70a2de1da6f4@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20260730
 DTEND;VALUE=DATE:20260731
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Vusolimogene Oderparepvec (BLA 125827)
@@ -34,7 +44,7 @@ URL:https://www.federalregister.gov/documents/2026/07/08/2026-13810/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:dd2fd3acad79a23f@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20260729
 DTEND;VALUE=DATE:20260730
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Deramiocel (Human Allogeneic Cardiosphere-Derived Cells) (BLA 125842)
@@ -44,7 +54,7 @@ URL:https://www.federalregister.gov/documents/2026/06/29/2026-13096/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:fbc0f4054442950c@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260501
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee — Camizestrant (NDA 220359)\; Truqap (Capivasertib) (sNDA 218197/S-004)
@@ -54,7 +64,7 @@ URL:https://www.federalregister.gov/documents/2026/03/09/2026-04497/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:adbdd2416a2440cd@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20250718
 DTEND;VALUE=DATE:20250719
 SUMMARY:FDA CDER: Psychopharmacologic Drugs Advisory Committee — REXULTI (brexpiprazole) (sNDA 205422/S-012)
@@ -64,7 +74,7 @@ URL:https://www.federalregister.gov/documents/2025/06/17/2025-10989/psychopharma
 END:VEVENT
 BEGIN:VEVENT
 UID:eb3d07cbf52f37ba@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20250717
 DTEND;VALUE=DATE:20250718
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee — Belantamab Mafodotin (BLA 761440)
@@ -74,7 +84,7 @@ URL:https://www.federalregister.gov/documents/2025/06/16/2025-10855/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:cdc28906e283903d@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20250520
 DTEND;VALUE=DATE:20250521
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee — COLUMVI (glofitamab) (sBLA 761309/S-001)\; DARZALEX FASPRO (daratumumab and hyaluronidase) (sBLA 761145/S-029) + more
@@ -84,7 +94,7 @@ URL:https://www.federalregister.gov/documents/2025/05/08/2025-08060/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:543c3bb4c67044f5@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20250224
 DTEND;VALUE=DATE:20250225
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee — FABHALTA (iptacopan) in the Treatment of Adults With C3G (sNDA 218276)
@@ -94,7 +104,7 @@ URL:https://www.federalregister.gov/documents/2024/12/30/2024-31309/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:cb1acdea548d06e0@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20250110
 DTEND;VALUE=DATE:20250111
 SUMMARY:FDA CDER: Anesthetic and Analgesic Drug Products Advisory Committee — Condoliase (BLA 761393)
@@ -104,7 +114,7 @@ URL:https://www.federalregister.gov/documents/2024/12/02/2024-28210/anesthetic-a
 END:VEVENT
 BEGIN:VEVENT
 UID:d4e0e3887c76c55b@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20241031
 DTEND;VALUE=DATE:20241101
 SUMMARY:FDA CDER: Endocrinologic and Metabolic Drugs Advisory Committee — Sotagliflozin Oral (NDA 210934)
@@ -114,7 +124,7 @@ URL:https://www.federalregister.gov/documents/2024/10/02/2024-22570/endocrinolog
 END:VEVENT
 BEGIN:VEVENT
 UID:54ae5c987880fa5f@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20241121
 DTEND;VALUE=DATE:20241122
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Andexxa (Coagulation Factor Xa (Recombinant)\, Inactivated -zhzo) (sBLA 125586)\; November 21\, 2024
@@ -124,7 +134,7 @@ URL:https://www.federalregister.gov/documents/2024/10/02/2024-22561/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:f55927150244476a@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20241010
 DTEND;VALUE=DATE:20241011
 SUMMARY:FDA CDER: Cardiovascular and Renal Drugs Advisory Committee — Elamipretide Hydrochloride (NDA 215244)
@@ -134,7 +144,7 @@ URL:https://www.federalregister.gov/documents/2024/09/06/2024-20062/cardiovascul
 END:VEVENT
 BEGIN:VEVENT
 UID:c191c5866b2c88b1@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20240913
 DTEND;VALUE=DATE:20240914
 SUMMARY:FDA CDER: Gastrointestinal Drugs Advisory Committee — OCALIVA (obeticholic acid) Oral (sNDA 207999)
@@ -144,7 +154,7 @@ URL:https://www.federalregister.gov/documents/2024/08/12/2024-17926/gastrointest
 END:VEVENT
 BEGIN:VEVENT
 UID:1f6ca383a9117a0f@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20240909
 DTEND;VALUE=DATE:20240910
 SUMMARY:FDA CDER: Antimicrobial Drugs Advisory Committee — Sulopenem Etzadroxil/Probenecid (NDA 213972)
@@ -154,7 +164,7 @@ URL:https://www.federalregister.gov/documents/2024/08/08/2024-17642/antimicrobia
 END:VEVENT
 BEGIN:VEVENT
 UID:08a4fb7e2fd522be@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20240725
 DTEND;VALUE=DATE:20240726
 SUMMARY:FDA CDER: Oncologic Drugs Advisory Committee — IMFINZI (durvalumab) (sBLA 761069/S-043)
@@ -164,7 +174,7 @@ URL:https://www.federalregister.gov/documents/2024/06/07/2024-12532/oncologic-dr
 END:VEVENT
 BEGIN:VEVENT
 UID:310fb70a811762fa@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20240610
 DTEND;VALUE=DATE:20240611
 SUMMARY:FDA CDER: Peripheral and Central Nervous System Drugs Advisory Committee — Donanemab for Intravenous (BLA 761248)
@@ -174,7 +184,7 @@ URL:https://www.federalregister.gov/documents/2024/05/08/2024-10051/peripheral-a
 END:VEVENT
 BEGIN:VEVENT
 UID:b347fcda1a20eeab@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20240524
 DTEND;VALUE=DATE:20240525
 SUMMARY:FDA CDER: Endocrinologic and Metabolic Drugs Advisory Committee — NNC0148-0287 (Insulin Icodec) (BLA 761326)
@@ -184,7 +194,7 @@ URL:https://www.federalregister.gov/documents/2024/04/29/2024-09158/endocrinolog
 END:VEVENT
 BEGIN:VEVENT
 UID:cb0a1ab442e87791@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20240223
 DTEND;VALUE=DATE:20240224
 SUMMARY:FDA CDER: Final Decision on Withdrawal of PEPAXTO (melphalan flufenamide) Following Appeal of the Proposal To Withdraw Approval — NDA 214383
@@ -194,7 +204,7 @@ URL:https://www.federalregister.gov/documents/2024/04/18/2024-08274/final-decisi
 END:VEVENT
 BEGIN:VEVENT
 UID:3e8af9861f84d999@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20231031
 DTEND;VALUE=DATE:20231101
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Sickle Cell Disease
@@ -204,7 +214,7 @@ URL:https://www.federalregister.gov/documents/2023/09/07/2023-19284/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:9214d3fb038b4760@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20230927
 DTEND;VALUE=DATE:20230928
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — BrainStorm Therapeutics — BLA 125782
@@ -214,7 +224,7 @@ URL:https://www.federalregister.gov/documents/2023/07/27/2023-15923/cellular-tis
 END:VEVENT
 BEGIN:VEVENT
 UID:584ad4cc812bf61d@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20230518
 DTEND;VALUE=DATE:20230519
 SUMMARY:FDA CBER: Vaccines and Related Biological Products Advisory Committee — Pfizer — BLA 125768
@@ -224,7 +234,7 @@ URL:https://www.federalregister.gov/documents/2023/04/11/2023-07550/vaccines-and
 END:VEVENT
 BEGIN:VEVENT
 UID:69d0cb863b44e8e5@ir-calendar
-DTSTAMP:20260924T064242Z
+DTSTAMP:20260925T064331Z
 DTSTART;VALUE=DATE:20230512
 DTEND;VALUE=DATE:20230513
 SUMMARY:FDA CBER: Cellular\, Tissue\, and Gene Therapies Advisory Committee — Sarepta Therapeutics — BLA 125781
