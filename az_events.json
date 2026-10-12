@@ -1,57 +1,6 @@
 {
   "future":  [
     {
-      "month":"September",
-      "year":"2026",
-      "entry":      [
-        {
-          "title":"Conference, Bank of America Global Healthcare Conference, London [Management]",
-          "href":"",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-09-23T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"23"
-            }
-          },
-          "actions":          {
-
-          }
-        },
-        {
-          "title":"Bus Tour, UBS Pharma Bus Tour, London [Management]",
-          "href":"",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-09-25T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"25"
-            }
-          },
-          "actions":          {
-
-          }
-        },
-        {
-          "title":"Conference, Santander Pharma Day, Virtual [IR]",
-          "href":"",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-09-29T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"29"
-            }
-          },
-          "actions":          {
-
-          }
-        }
-      ]
-    },
-    {
       "month":"October",
       "year":"2026",
       "entry":      [
@@ -72,7 +21,7 @@
         },
         {
           "title":"ASBMR, AZN Meet the Management, Virtual [Management]",
-          "href":"",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-ASBMR-2026.html",
           "rel":"",
           "date":          {
             "timestamp":"2026-10-12T00:00:00.000+0000",
@@ -82,7 +31,10 @@
             }
           },
           "actions":          {
-
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/futureEventsMonths/eventslistingmonth_669594900/eventCards/eventslistingcard_703056806.event.ics"
+            }
           }
         },
         {
@@ -105,7 +57,7 @@
         },
         {
           "title":"AZN 9M and Q3 2026 results",
-          "href":"",
+          "href":"/content/astraz/investor-relations/9m-and-q3-2026-results-event.html",
           "rel":"",
           "date":          {
             "timestamp":"2026-10-30T00:00:00.000+0000",
@@ -115,7 +67,10 @@
             }
           },
           "actions":          {
-
+            "add":            {
+              "label":"Add to Calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/futureEventsMonths/eventslistingmonth_669594900/eventCards/eventslistingcard_386537815.event.ics"
+            }
           }
         }
       ]
@@ -336,6 +291,51 @@
       "month":"September",
       "year":"2026",
       "entry":      [
+        {
+          "title":"Conference, Santander Pharma Day, Virtual [IR]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-29T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"29"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Bus Tour, UBS Pharma Bus Tour, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-25T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"25"
+            }
+          },
+          "actions":          {
+
+          }
+        },
+        {
+          "title":"Conference, Bank of America Global Healthcare Conference, London [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-09-23T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"23"
+            }
+          },
+          "actions":          {
+
+          }
+        },
         {
           "title":"Site Visit, SEB Investor visit, Shanghai [Management]",
           "href":"",
