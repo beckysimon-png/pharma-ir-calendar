@@ -14,9 +14,17 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install playwright && playwright install --with-deps chromium
-      - run: python firstword_events.py
+      # xvfb gives the script a display so it can retry in a headed browser
+      - run: xvfb-run -a python firstword_events.py
+      - name: Upload diagnostics on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fw_debug
+          path: fw_debug/
+          if-no-files-found: ignore
       - name: Commit calendar
-        if: always()
+        if: success()
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
