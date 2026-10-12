@@ -124,70 +124,145 @@ def _has_events(text: str) -> bool:
         return False
 
 
+DEBUG_DIR = Path(os.getenv("FIRSTWORD_DEBUG_DIR", "fw_debug"))
+_REAL_UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36")
+_STEALTH_JS = "Object.defineProperty(navigator,'webdriver',{get:()=>undefined});"
+
+
+def _safe_url(u: str) -> str:
+    p = urllib.parse.urlparse(u)
+    return f"{p.scheme}://{p.netloc}{p.path}"
+
+
+def _browser_attempt(p, headless: bool) -> str:
+    """One browser attempt. Returns the events JSON text or raises. On failure it
+    writes diagnostics (network log, screenshot, page text) to DEBUG_DIR; tokens
+    are never logged (only whether an Authorization header was present)."""
+    launch = {"headless": headless,
+              "args": ["--disable-blink-features=AutomationControlled"]}
+    if os.getenv("FIRSTWORD_CHROMIUM"):
+        launch["executable_path"] = os.environ["FIRSTWORD_CHROMIUM"]
+    browser = p.chromium.launch(**launch)
+    seen, net, auth = [], [], {}
+    try:
+        ctx = browser.new_context(
+            locale="en-US", timezone_id="America/New_York",
+            viewport={"width": 1366, "height": 900},
+            user_agent=os.getenv("FIRSTWORD_BROWSER_UA", _REAL_UA))
+        ctx.add_init_script(_STEALTH_JS)
+        page = ctx.new_page()
+
+        def on_request(req):
+            try:
+                if API_HOST in req.url and req.headers.get("authorization"):
+                    auth["h"] = req.headers["authorization"]
+            except Exception:
+                pass
+
+        def on_response(resp):
+            try:
+                req = resp.request
+                host = urllib.parse.urlparse(resp.url).netloc
+                if "firstword" in host and req.resource_type in ("xhr", "fetch", "document"):
+                    net.append(f"{req.method} {resp.status} {req.resource_type} "
+                               f"auth={'Y' if req.headers.get('authorization') else 'N'} "
+                               f"{_safe_url(resp.url)}")
+                if resp.status == 200 and "json" in (resp.headers.get("content-type") or ""):
+                    txt = resp.text()
+                    if _has_events(txt):          # ANY endpoint returning events
+                        seen.append(txt)
+            except Exception:
+                pass
+
+        page.on("request", on_request)
+        page.on("response", on_response)
+        page.on("requestfailed", lambda r: net.append(
+            f"FAILED {r.method} {_safe_url(r.url)} {r.failure}")
+            if "firstword" in r.url else None)
+
+        try:
+            page.goto(PAGE, wait_until="domcontentloaded", timeout=60_000)
+        except Exception as exc:
+            net.append(f"goto warning: {exc}")
+        try:                                       # best-effort cookie-banner dismissal
+            for label in ("Accept all", "Accept All", "Accept", "I agree", "Agree",
+                          "Allow all", "Got it"):
+                btn = page.get_by_role("button", name=label)
+                if btn.count():
+                    btn.first.click(timeout=2000)
+                    break
+        except Exception:
+            pass
+        for i in range(40):                        # up to ~20 s; nudge lazy loaders
+            if seen:
+                break
+            if i in (4, 12, 20):
+                try:
+                    page.mouse.wheel(0, 1200)
+                except Exception:
+                    pass
+            page.wait_for_timeout(500)
+
+        if seen:
+            best = max(seen, key=len)
+            print(f"FirstWord: captured page's own events response ({len(best)} bytes).")
+            return best
+        if auth.get("h"):
+            res = page.evaluate("""async ([url, auth, body]) => {
+                const r = await fetch(url, {method: "POST", headers: {
+                    "authorization": auth, "content-type": "application/json",
+                    "accept": "application/json, text/plain, */*"}, body});
+                return {status: r.status, text: await r.text()};
+            }""", [API_URL, auth["h"], json.dumps(_search_body())])
+            if res["status"] == 200 and _has_events(res["text"]):
+                print("FirstWord: replayed page auth for own query.")
+                return res["text"]
+            net.append(f"replay with page auth -> HTTP {res['status']}")
+
+        # ---- failure: write diagnostics --------------------------------------
+        DEBUG_DIR.mkdir(parents=True, exist_ok=True)
+        try:
+            title = page.title()
+            body = page.inner_text("body")[:2000]
+        except Exception as exc:
+            title, body = "?", f"(could not read page: {exc})"
+        report = [f"mode: {'headless' if headless else 'headed'}",
+                  f"final url: {_safe_url(page.url)}", f"title: {title}",
+                  f"auth header seen on API host: {'yes' if auth else 'no'}",
+                  "--- firstword network calls ---", *net,
+                  "--- visible page text (first 2000 chars) ---", body]
+        (DEBUG_DIR / f"report_{'headless' if headless else 'headed'}.txt").write_text(
+            "\n".join(report), encoding="utf-8")
+        try:
+            page.screenshot(path=str(DEBUG_DIR / f"page_{'headless' if headless else 'headed'}.png"),
+                            full_page=True)
+        except Exception:
+            pass
+        print("\n".join(["FirstWord DIAGNOSTICS:", *report]), file=sys.stderr)
+        raise RuntimeError("page made no usable search call (see diagnostics above / "
+                           "the fw_debug artifact: blocked, login wall, or site change)")
+    finally:
+        browser.close()
+
+
 def fetch_browser() -> str:
-    """Load the public events page in headless Chromium and capture the search
-    response the page itself requests (it fetches its own token). If that
-    response isn't the events list, replay the page's auth for our own query."""
+    """Load the public events page in Chromium and capture the events response the
+    page itself requests (it fetches its own token). Tries headless, then headed
+    (works under xvfb on CI) if the first attempt fails."""
     try:
         from playwright.sync_api import sync_playwright
     except ImportError:
         raise RuntimeError("playwright not installed (pip install playwright && "
                            "playwright install --with-deps chromium)")
-    seen = []            # (request_post_data, response_text) from the page
-    auth = {}
-    launch = {"headless": True}
-    if os.getenv("FIRSTWORD_CHROMIUM"):
-        launch["executable_path"] = os.environ["FIRSTWORD_CHROMIUM"]
+    errs = []
     with sync_playwright() as p:
-        browser = p.chromium.launch(**launch)
-        try:
-            ctx = browser.new_context(locale="en-US")
-            page = ctx.new_page()
-
-            def on_response(resp):
-                if not resp.url.startswith(API_URL):
-                    return
-                try:
-                    h = resp.request.headers
-                    if h.get("authorization"):
-                        auth["h"] = h["authorization"]
-                    if resp.status == 200:
-                        seen.append(resp.text())
-                except Exception:
-                    pass
-
-            page.on("response", on_response)
+        for headless in ((True, False) if os.getenv("DISPLAY") else (True,)):
             try:
-                page.goto(PAGE, wait_until="networkidle", timeout=60_000)
+                return _browser_attempt(p, headless)
             except Exception as exc:
-                print(f"FirstWord: page load warning: {exc}", file=sys.stderr)
-            for _ in range(30):                       # up to ~15 s more
-                if any(_has_events(t) for t in seen):
-                    break
-                page.wait_for_timeout(500)
-
-            good = [t for t in seen if _has_events(t)]
-            if good:
-                best = max(good, key=len)             # widest list the page loaded
-                print(f"FirstWord: captured page's own events response ({len(best)} bytes).")
-                return best
-            if auth.get("h"):
-                res = page.evaluate("""async ([url, auth, body]) => {
-                    const r = await fetch(url, {method: "POST", headers: {
-                        "authorization": auth, "content-type": "application/json",
-                        "accept": "application/json, text/plain, */*"}, body});
-                    return {status: r.status, text: await r.text()};
-                }""", [API_URL, auth["h"], json.dumps(_search_body())])
-                if res["status"] == 200 and _has_events(res["text"]):
-                    print("FirstWord: replayed page auth for own query.")
-                    return res["text"]
-                raise RuntimeError(f"replay with page auth failed (HTTP {res['status']})")
-            raise RuntimeError(
-                "page made no usable search call (site changed, blocked the headless "
-                "browser, or events now require login) -- open the page and re-check "
-                "the Network tab")
-        finally:
-            browser.close()
+                errs.append(str(exc))
+    raise RuntimeError(" | ".join(errs))
 
 
 def fetch_input() -> tuple[str, str]:
