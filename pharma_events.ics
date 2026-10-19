@@ -4,7 +4,7 @@ PRODID:-//pharma-ir-calendar//EN
 CALSCALE:GREGORIAN
 BEGIN:VEVENT
 UID:36df6857853e43f0@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261103T150000Z
 DTEND:20261103T160000Z
 SUMMARY:Pfizer: Pfizer Quarterly Corporate Performance - Third Quarter 2026
@@ -13,7 +13,7 @@ URL:https://onlinexperiences.com/Launch/QReg/ShowUUID=18F647D2-90A9-46C9-AA13-BD
 END:VEVENT
 BEGIN:VEVENT
 UID:9aeeefeeb60d3cfd@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261029T203000Z
 DTEND:20261029T213000Z
 SUMMARY:Gilead: Gilead Sciences Q3 2026 Earnings Conference Call
@@ -22,7 +22,7 @@ URL:https://events.q4inc.com/attendee/875715673
 END:VEVENT
 BEGIN:VEVENT
 UID:fa6d1aad376c5351@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261029T120000Z
 DTEND:20261029T130000Z
 SUMMARY:Bristol Myers Squibb: Bristol Myers Squibb Q3 2026 Results Conference Call
@@ -31,7 +31,7 @@ URL:https://event.choruscall.com/mediaframe/webcast.html?webcastid=GlsfwVZY
 END:VEVENT
 BEGIN:VEVENT
 UID:f4a42a924715eb22@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:AstraZeneca: ESMO\, AZN Meet the Management\, Madrid\, Hybrid
@@ -39,7 +39,7 @@ DESCRIPTION:Type: medical_conference  |  Source: https://www.astrazeneca.com/con
 END:VEVENT
 BEGIN:VEVENT
 UID:01bf22a4255d23ab@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
 SUMMARY:AstraZeneca: AZN 9M and Q3 2026 results
@@ -47,7 +47,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.astrazeneca.com/content/
 END:VEVENT
 BEGIN:VEVENT
 UID:409550a171399ed2@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261022T120000Z
 DTEND:20261022T133000Z
 SUMMARY:Roche: Roche 3rd Quarter Sales 2026 (virtual event)
@@ -55,8 +55,62 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/upda
 LOCATION:Basel\, Switzerland
 END:VEVENT
 BEGIN:VEVENT
+UID:369cac6a0b1d7b6c@ir-calendar
+DTSTAMP:20261019T114542Z
+DTSTART:20270111T160000Z
+DTEND:20270111T180000Z
+SUMMARY:Roche: J.P. Morgan 2027 Healthcare Conference
+DESCRIPTION:Type: jpm_healthcare  |  Source: https://www.roche.com/investors/events.htm
+LOCATION:San Francisco\, US
+END:VEVENT
+BEGIN:VEVENT
+UID:e62a5905d41d894a@ir-calendar
+DTSTAMP:20261019T114542Z
+DTSTART:20270128T130000Z
+DTEND:20270128T150000Z
+SUMMARY:Roche: Roche Full Year Results 2026 (virtual event)
+DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/events.htm
+LOCATION:Basel\, CH
+END:VEVENT
+BEGIN:VEVENT
+UID:f6ac12ffda15f71f@ir-calendar
+DTSTAMP:20261019T114542Z
+DTSTART:20270309T093000Z
+DTEND:20270309T113000Z
+SUMMARY:Roche: 2027 Roche Annual General Meeting (tentative)
+DESCRIPTION:Type: agm  |  Source: https://www.roche.com/about/governance/annual-general-meetings
+LOCATION:Basel\, CH
+END:VEVENT
+BEGIN:VEVENT
+UID:e3978097215c9a92@ir-calendar
+DTSTAMP:20261019T114542Z
+DTSTART:20270422T120000Z
+DTEND:20270422T133000Z
+SUMMARY:Roche: Roche 1st Quarter Sales 2027 (virtual event)
+DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/events.htm
+LOCATION:Basel\, CH
+END:VEVENT
+BEGIN:VEVENT
+UID:529b1d22016c1660@ir-calendar
+DTSTAMP:20261019T114542Z
+DTSTART:20270722T120000Z
+DTEND:20270722T140000Z
+SUMMARY:Roche: Roche Half Year Results 2027 (virtual event)
+DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/events.htm
+LOCATION:Basel\, CH
+END:VEVENT
+BEGIN:VEVENT
+UID:e9e4e74eb4df293a@ir-calendar
+DTSTAMP:20261019T114542Z
+DTSTART:20271021T120000Z
+DTEND:20271021T133000Z
+SUMMARY:Roche: Roche 3rd Quarter Sales 2027 (virtual event)
+DESCRIPTION:Type: earnings_call  |  Source: https://www.roche.com/investors/events.htm
+LOCATION:Basel\, CH
+END:VEVENT
+BEGIN:VEVENT
 UID:fd277ca97bab37d3@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
 SUMMARY:Merck: Investor Event at ESMO 2026
@@ -65,7 +119,7 @@ URL:https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4\;F:QS!10100&Show
 END:VEVENT
 BEGIN:VEVENT
 UID:9bc882ce281f96a8@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
 SUMMARY:Merck: Q3 2026 Earnings Call
@@ -74,7 +128,7 @@ URL:https://onlinexperiences.com/scripts/Server.nxp?LASCmd=AI:4\;F:QS!10100&Show
 END:VEVENT
 BEGIN:VEVENT
 UID:7cd452973bdbace0@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20270202
 DTEND;VALUE=DATE:20270203
 SUMMARY:Merck: Q4 2026 Earnings Call
@@ -82,7 +136,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q4-2026
 END:VEVENT
 BEGIN:VEVENT
 UID:408b36af7de8c361@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20270429
 DTEND;VALUE=DATE:20270430
 SUMMARY:Merck: Q1 2027 Earnings Call
@@ -90,7 +144,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q1-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:be64e46ac531bc21@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20270803
 DTEND;VALUE=DATE:20270804
 SUMMARY:Merck: Q2 2027 Earnings Call
@@ -98,7 +152,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q2-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:dbeed4655ac37594@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20271028
 DTEND;VALUE=DATE:20271029
 SUMMARY:Merck: Q3 2027 Earnings Call
@@ -106,7 +160,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.merck.com/events/q3-2027
 END:VEVENT
 BEGIN:VEVENT
 UID:965571d493dd68f4@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261029T140000Z
 DTEND:20261029T150000Z
 SUMMARY:Eli Lilly: Q3 2026 Earnings Call
@@ -115,7 +169,7 @@ URL:https://edge.media-server.com/mmc/p/2fuuxzv8
 END:VEVENT
 BEGIN:VEVENT
 UID:8a4e05e992e45edf@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261104
 DTEND;VALUE=DATE:20261105
 SUMMARY:Novo Nordisk: Q3 2026 quarterly results
@@ -124,7 +178,7 @@ LOCATION:Access Online
 END:VEVENT
 BEGIN:VEVENT
 UID:4272ad5fb6d9f0d7@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261024T183000Z
 DTEND:20261024T193000Z
 SUMMARY:Amgen: ESMO Congress 2026
@@ -132,7 +186,7 @@ DESCRIPTION:Type: medical_conference  |  Source: https://investors.amgen.com/eve
 END:VEVENT
 BEGIN:VEVENT
 UID:6b53d35991fe1649@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261103T213000Z
 DTEND:20261103T223000Z
 SUMMARY:Amgen: Amgen Q3 2026 Earnings Conference Call
@@ -140,7 +194,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://investors.amgen.com/events/e
 END:VEVENT
 BEGIN:VEVENT
 UID:31941fb524507f35@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261030T130000Z
 DTEND:20261030T140000Z
 SUMMARY:AbbVie: AbbVie to Host Third-Quarter 2026 Earnings Conference Call
@@ -148,7 +202,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://investors.abbvie.com/events/
 END:VEVENT
 BEGIN:VEVENT
 UID:5ece7caae28da938@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261030T123000Z
 DTEND:20261030T133000Z
 SUMMARY:Sanofi: Third quarter 2026 results
@@ -156,7 +210,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.sanofi.com/en/investors/
 END:VEVENT
 BEGIN:VEVENT
 UID:d45ecfea0fbbbe57@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20270128T133000Z
 DTEND:20270128T150000Z
 SUMMARY:Sanofi: Fourth quarter & full year 2026 results
@@ -164,7 +218,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.sanofi.com/en/investors/
 END:VEVENT
 BEGIN:VEVENT
 UID:530b3a281294677f@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20270423T110000Z
 DTEND:20270423T120000Z
 SUMMARY:Sanofi: First quarter 2027 results
@@ -172,7 +226,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.sanofi.com/en/investors/
 END:VEVENT
 BEGIN:VEVENT
 UID:be2bee5ec60f92cf@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20270428
 DTEND;VALUE=DATE:20270429
 SUMMARY:Sanofi: Annual General Meeting 2027
@@ -180,7 +234,7 @@ DESCRIPTION:Type: agm  |  Source: https://www.sanofi.com/en/investors/financial-
 END:VEVENT
 BEGIN:VEVENT
 UID:55b63efa04f843d4@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20270729T110000Z
 DTEND:20270729T120000Z
 SUMMARY:Sanofi: Second quarter 2027 results
@@ -188,7 +242,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.sanofi.com/en/investors/
 END:VEVENT
 BEGIN:VEVENT
 UID:ba07d74ed3f1b9f9@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20271028T110000Z
 DTEND:20271028T120000Z
 SUMMARY:Sanofi: Third quarter 2027 results
@@ -196,7 +250,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.sanofi.com/en/investors/
 END:VEVENT
 BEGIN:VEVENT
 UID:6653d84bdf208e4b@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART:20261027T060000Z
 DTEND:20261027T070000Z
 SUMMARY:Novartis: Novartis Financial Results - Q3 2026
@@ -204,7 +258,7 @@ DESCRIPTION:Type: earnings_call  |  Source: https://www.novartis.com/events/nova
 END:VEVENT
 BEGIN:VEVENT
 UID:ff85d214f401338d@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261119
 DTEND;VALUE=DATE:20261120
 SUMMARY:Novartis: Meet Novartis Management 2026
@@ -212,7 +266,7 @@ DESCRIPTION:Type: capital_markets_day  |  Source: https://www.novartis.com/event
 END:VEVENT
 BEGIN:VEVENT
 UID:2d04ca7f24020890@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20270111
 DTEND;VALUE=DATE:20270112
 SUMMARY:Novartis: J.P. Morgan Healthcare Conference
@@ -220,7 +274,7 @@ DESCRIPTION:Type: jpm_healthcare  |  Source: https://www.novartis.com/events/jp-
 END:VEVENT
 BEGIN:VEVENT
 UID:c112d6f65a896b8c@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
 SUMMARY:GSK: Following the ESMO annual meeting\, we are hosting a virtual briefing call on Tuesday\, 27 October 2026 at 14:30 GMT\, with Nina Mojas\, President\, Global Product Strategy\, Hesham Abdullah\, SVP Global Oncology R&D\, and Ahmed Rabie\, SVP Global Product Strategy\, Oncology to review and discuss recent data presentations from GSK’s oncology portfolio at ESMO and WCLC.
@@ -229,7 +283,7 @@ URL:https://gsk.zoom.us/webinar/register/WN_ldMSI9dpSdO2bxzWQ1laIw#/registration
 END:VEVENT
 BEGIN:VEVENT
 UID:7ffb38050245e076@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
 SUMMARY:GSK: GSK’s third quarter 2026 results will be published via the London Stock Exchange at 07:00 GMT\, 03:00 EDT on Wednesday\, 28 October 2026. The Company will host a live call for investors and analysts at 12:00 GMT\, 08:00 EDT.
@@ -238,7 +292,7 @@ URL:https://events.zoom.us/ev/At0lka17t_nPyyFfCzy1qJxUIC_JEdu9ZF6cr8cZZWZSoO6i8N
 END:VEVENT
 BEGIN:VEVENT
 UID:ea9a4267253a15e4@ir-calendar
-DTSTAMP:20261018T061609Z
+DTSTAMP:20261019T114542Z
 DTSTART;VALUE=DATE:20270203
 DTEND;VALUE=DATE:20270204
 SUMMARY:GSK: We will announce our full year and fourth quarter results on Wednesday\, 3 February 2027.
