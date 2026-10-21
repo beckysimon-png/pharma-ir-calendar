@@ -3,8 +3,32 @@ VERSION:2.0
 CALSCALE:GREGORIAN
 PRODID:-//MedicalMeetingTracker//FirstWord Events//EN
 BEGIN:VEVENT
+UID:7342fe04fc8edf9b493e6989@firstword-events
+DTSTAMP:20261021T120137Z
+DTSTART:20261202T150000Z
+DTEND:20261202T200000Z
+SUMMARY:FirstWord: FirstLook: Obesity\, Heart Failure & MASH Outlook
+DESCRIPTION:What are the most important developments shaping treatment in o
+ besity\, heart failure and MASH — and what are leading experts saying ab
+ out them?\n\nJoin FirstWord for a live discussion with senior pharma analy
+ sts who have conducted in-depth research with some of the world’s most r
+ espected KOLs. They will share key insights from those conversations\, hig
+ hlighting the therapies\, trends and market shifts that matter most across
+  obesity\, heart failure and metabolic dysfunction-associated steatohepati
+ tis (MASH).\nType: FW Perspectives Live\nSpeakers: Sarah Harris\, Senior A
+ nalyst\, FirstWord Group\; Simon King\, Editor in Chief\, Pharmaceutical N
+ ews Analysis\, FirstWord Group\; Francois Pagnini\, Principal Analyst\, Di
+ sease Area Insights\, FirstWord Group\; and Basharut Syed\, Senior Analyst
+ \, FirstWord Group\nRegister Now: https://us02web.zoom.us/webinar/register
+ /8317920673542/WN_ak59uXYhQkyURMHKfjThqw\nSource: https://us02web.zoom.us/
+ webinar/register/8317920673542/WN_ak59uXYhQkyURMHKfjThqw
+URL:https://us02web.zoom.us/webinar/register/8317920673542/WN_ak59uXYhQkyUR
+ MHKfjThqw
+LOCATION:Online webinar
+END:VEVENT
+BEGIN:VEVENT
 UID:9ef12c7da6429af75cde4c0f@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20261104T150000Z
 DTEND:20261104T200000Z
 SUMMARY:FirstWord: Adapting to Change: Big Pharma’s Next Strategic Moves
@@ -22,7 +46,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:d5b63fcea42b5ffff1d14b76@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20261021T150000Z
 DTEND:20261021T190000Z
 SUMMARY:FirstWord: Medical Affairs in 2027: Proving the value we create for
@@ -52,7 +76,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:d6eec918e5080ccd64740682@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20261015T150000Z
 DTEND:20261015T190000Z
 SUMMARY:FirstWord: Consistency as a Competitive Advantage in a Changing Mar
@@ -71,16 +95,16 @@ DESCRIPTION:As brands move beyond launch\, sustaining growth often means na
  ommercial success.\nType: Sponsor Event\nSponsor: CoverMyMeds\nSpeakers: M
  egan Wetzel\, Vice President\, Access & Affordability\, CoverMyMeds\; Curt
   Wanek\, Senior Director\, Business Intelligence\, CoverMyMeds\; and Jo Sh
- orthouse\, Moderator\, FirstWord\nRegister Now: https://us02web.zoom.us/we
- binar/register/4517895889375/WN_bSkWuNi3QuG70snJSZCZlQ\nSource: https://us
- 02web.zoom.us/webinar/register/4517895889375/WN_bSkWuNi3QuG70snJSZCZlQ
+ orthouse\, Moderator\, FirstWord\nWatch Now: https://us02web.zoom.us/webin
+ ar/register/4517895889375/WN_bSkWuNi3QuG70snJSZCZlQ\nSource: https://us02w
+ eb.zoom.us/webinar/register/4517895889375/WN_bSkWuNi3QuG70snJSZCZlQ
 URL:https://us02web.zoom.us/webinar/register/4517895889375/WN_bSkWuNi3QuG70
  snJSZCZlQ
 LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:b3ac7f12a63916791e308eca@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260909T140000Z
 DTEND:20260909T190000Z
 SUMMARY:FirstWord: FirstLook: Solid Tumours Outlook (Breast\, Pancreatic\, 
@@ -101,7 +125,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:6b912a0afd27757c3d96f353@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260617T140000Z
 DTEND:20260617T190000Z
 SUMMARY:FirstWord: Biopharma in 2026 — a Mid-Year Recap
@@ -119,7 +143,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:fe57575063a6ac6efb9f29ec@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260520T140000Z
 DTEND:20260520T190000Z
 SUMMARY:FirstWord: Biotech Innovations: The Next Frontier in Healthcare
@@ -142,7 +166,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:ed630fcdca2d093a27eaa1e9@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260429T140000Z
 DTEND:20260429T190000Z
 SUMMARY:FirstWord: FirstLook: Haematologic Oncology Pipeline Outlook (MM\, 
@@ -165,7 +189,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:19236759a59c59e53c5bf0c7@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260415T140000Z
 DTEND:20260415T190000Z
 SUMMARY:FirstWord: Pharma’s Fastest Growing Drugs: The Growth Engines of 
@@ -186,7 +210,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:ef499028c31e462d1467cf31@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260211T150000Z
 DTEND:20260211T200000Z
 SUMMARY:FirstWord: AI Diagnostics in 2026: What’s Coming and What Pharma 
@@ -211,7 +235,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:d6ca352077187aac58230b5b@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260121T150000Z
 DTEND:20260121T200000Z
 SUMMARY:FirstWord: The Drugs That Will Shape 2026
@@ -233,7 +257,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:8c6569df51e0a99e7f3c5794@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20260115T150000Z
 DTEND:20260115T200000Z
 SUMMARY:FirstWord: JPM Healthcare Conference Review
@@ -257,7 +281,7 @@ LOCATION:Online webinar
 END:VEVENT
 BEGIN:VEVENT
 UID:3fbf10fd5bf9f8dc3483924a@firstword-events
-DTSTAMP:20261020T114932Z
+DTSTAMP:20261021T120137Z
 DTSTART:20251105T150000Z
 DTEND:20251105T200000Z
 SUMMARY:FirstWord: Unlocking Access: Navigating Pharma’s Regulatory Cross
