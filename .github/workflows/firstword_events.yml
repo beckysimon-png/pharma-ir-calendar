@@ -1,21 +1,38 @@
 name: FirstWord events
+
 on:
   schedule:
     - cron: "17 6 * * *"      # once a day
   workflow_dispatch:
+
 permissions:
   contents: write
+
+concurrency:
+  group: calendar-main-writer
+  cancel-in-progress: false
+
 jobs:
   run:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Get latest calendar before running
+        run: git pull --ff-only origin main
+
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+
       - run: pip install playwright && playwright install --with-deps chromium
+
       # xvfb gives the script a display so it can retry in a headed browser
       - run: xvfb-run -a python firstword_events.py
+
       - name: Upload diagnostics on failure
         if: failure()
         uses: actions/upload-artifact@v4
@@ -23,11 +40,19 @@ jobs:
           name: fw_debug
           path: fw_debug/
           if-no-files-found: ignore
+
       - name: Commit calendar
         if: success()
         run: |
           git config user.name "github-actions"
           git config user.email "actions@users.noreply.github.com"
           git add firstword_events.ics
-          git diff --cached --quiet || git commit -m "Update FirstWord events"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "No calendar changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update FirstWord events"
+          git pull --rebase origin main
+          git push origin HEAD:main
