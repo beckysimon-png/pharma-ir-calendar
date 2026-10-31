@@ -262,7 +262,17 @@ COMPANIES = {
         "endpoint": "https://www.gsk.com/en-gb/investors/events-calendar/",
         "method": "GET",
     },
-}
+    # -- Regeneron -----------------------------------------------------------
+    # NASDAQ IR (Drupal) platform, same family as Lilly/Amgen/AbbVie, but a
+    # FOURTH rendering: "Upcoming events" + "Recent" on one page, dates like
+    # "Oct 30, 2026 8:30 AM EDT". Markup-agnostic text parser (see 5k).
+    "regeneron": {
+        "name": "Regeneron",
+        "adapter": "regeneron",
+        "ir_host": "https://investor.regeneron.com",
+        "endpoint": "https://investor.regeneron.com/events-and-presentations/events-and-recent",
+        "method": "GET",
+    },
 
 # ---------------------------------------------------------------------------
 # 2. THE BOUNCER'S RULEBOOK
@@ -1442,6 +1452,100 @@ def parse_abbvie(raw_html: str, cfg: dict) -> list:
             location="",
             tags=[],
             all_day=all_day,
+        )
+        basis = f"{cfg['name']}|{title}|{start_dt.date()}"
+        ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
+        events.append(ev)
+    return events
+	# ---------------------------------------------------------------------------
+# 5k. REGENERON ADAPTER  (NASDAQ IR platform; markup-agnostic text parse)
+# ---------------------------------------------------------------------------
+_REGN_MONTHS = {m: i for i, m in enumerate(
+    ["jan", "feb", "mar", "apr", "may", "jun",
+     "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
+_REGN_DATE = re.compile(
+    r"\b([A-Z][a-z]{2,8})\.?\s+(\d{1,2}),?\s+(\d{4})\s+(?:at\s+)?"
+    r"(\d{1,2}:\d{2})\s*([AaPp][Mm])\s+([A-Za-z]{2,4})\b")
+_REGN_END_HEADINGS = {"recent", "recent events", "past events", "archive"}
+
+def fetch_regeneron(cfg: dict) -> str:
+    body = _fetch_nir_html(cfg, "<")        # generic GET; we do our own check
+    if "upcoming events" not in body.lower():
+        interstitial = ("_abck" in body or "ak_bmsc" in body
+                        or "Access Denied" in body or "bm-verify" in body)
+        hint = " (looks like a bot-challenge page)" if interstitial else ""
+        raise RuntimeError(
+            f"{cfg['name']}: no 'Upcoming events' heading found{hint}. "
+            f"Page markup changed or events are rendered client-side; "
+            f"re-inspect view-source of the events page.")
+    return body
+
+def _regn_lines(raw_html: str) -> list:
+    """HTML -> clean text lines. Anchors survive as '[[url]]' lines so the
+    detail/webcast links can still be recovered after tags are stripped."""
+    s = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", raw_html)
+    s = re.sub(r'(?is)<a\b[^>]*?href="\'["\'][^>]*>',
+               lambda m: "\n[[" + html.unescape(m.group(1)).strip() + "]]\n", s)
+    s = re.sub(r"(?s)<[^>]+>", "\n", s)
+    s = html.unescape(s)
+    out = []
+    for ln in s.split("\n"):
+        ln = re.sub(r"\s+", " ", ln).strip()
+        if ln:
+            out.append(ln)
+    return out
+
+def parse_regeneron(raw_html: str, cfg: dict) -> list:
+    events = []
+    if not raw_html:
+        return events
+    today = dt.datetime.now(dt.timezone.utc).date()
+    lines = _regn_lines(raw_html)
+
+    # Isolate ONLY "Upcoming events" (heading -> "Recent" heading).
+    try:
+        i0 = next(i for i, l in enumerate(lines) if l.lower() == "upcoming events")
+    except StopIteration:
+        return events
+    i1 = next((j for j in range(i0 + 1, len(lines))
+               if lines[j].lower() in _REGN_END_HEADINGS), len(lines))
+    text = "\n".join(lines[i0 + 1:i1])
+
+    matches = list(_REGN_DATE.finditer(text))
+    for n, m in enumerate(matches):
+        mon = _REGN_MONTHS.get(m.group(1)[:3].lower())
+        if not mon:
+            continue
+        tz = m.group(6).upper()
+        try:
+            naive = dt.datetime.strptime(
+                f"{m.group(3)}-{mon:02d}-{int(m.group(2)):02d} "
+                f"{m.group(4)} {m.group(5).upper()}", "%Y-%m-%d %I:%M %p")
+        except ValueError:
+            continue
+        offset = _resolve_offset(tz, naive)
+        if offset is None:
+            continue
+        start_dt = (naive - dt.timedelta(hours=offset)).replace(tzinfo=dt.timezone.utc)
+        if start_dt.date() < today:                    # forward-looking only
+            continue
+        nxt = matches[n + 1].start() if n + 1 < len(matches) else len(text)
+        chunk_lines = text[m.end():nxt].split("\n")
+        title = next((l for l in chunk_lines if l and not l.startswith("[[")), "")
+        if not title:
+            continue
+        links = [l[2:-2] for l in chunk_lines if l.startswith("[[") and l.endswith("]]")]
+        def _abs(u): return u if u.startswith("http") else cfg["ir_host"].rstrip("/") + u
+        detail = next((_abs(u) for u in links if "event-details" in u), "")
+        webcast = next((u for u in links
+                        if u.startswith("http") and "event-details" not in u
+                        and not u.lower().endswith((".pdf", ".xlsx", ".doc", ".docx"))
+                        and cfg["ir_host"].split("//")[-1] not in u), "")
+        ev = Event(
+            company=cfg["name"], title=title, start_utc=start_dt, end_utc=None,
+            tz_original=tz, event_type="unknown",
+            source_url=detail or cfg["endpoint"], webcast_url=webcast,
+            location="", tags=[], all_day=False,
         )
         basis = f"{cfg['name']}|{title}|{start_dt.date()}"
         ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
