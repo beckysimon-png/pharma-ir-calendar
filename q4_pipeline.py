@@ -330,6 +330,16 @@ COMPANIES = {
         "endpoint": "https://investors.alnylam.com/events",
         "method": "GET",
     },
+	    # -- Moderna ---------------------------------------------------------------
+    # NOT Q4. Duda-hosted page; events ride in an inline JS array
+    # (const eventsMRNA=[{date,time,event,webcastURL,...}]). See 5n.
+    "moderna": {
+        "name": "Moderna",
+        "adapter": "moderna",
+        "ir_host": "https://investors.modernatx.com",
+        "endpoint": "https://investors.modernatx.com/events-presentations",
+        "method": "GET",
+    },
 }
 # ---------------------------------------------------------------------------
 # 2. THE BOUNCER'S RULEBOOK
@@ -1857,6 +1867,104 @@ def parse_bayer(raw_json: dict, cfg: dict) -> list:
         events.append(ev)
     return events
 
+# ---------------------------------------------------------------------------
+# 5n. MODERNA ADAPTER  (Duda site; events in an inline JS array "eventsMRNA")
+# ---------------------------------------------------------------------------
+# Each object: {date:"November 6, 2026", time:"8:00 AM ET", event:"...",
+#   webcastURL:"...", investorEvents:"yes"|"", eventEnds:"8:30 AM", ...}
+# The commented-out template at the top of the array is skipped automatically
+# (the "//" sits between "{" and "date:"). Empty time -> all-day.
+_MRNA_MARKER = "eventsMRNA"
+_MRNA_TIME = re.compile(r"^(\d{1,2}):(\d{2})\s*([AaPp])\.?[Mm]\.?\s*([A-Za-z]{2,4})?$")
+
+def fetch_moderna(cfg: dict) -> str:
+    body = _fetch_nir_html(cfg, _MRNA_MARKER)      # hardened GET + marker check
+    if not re.search(r"eventsMRNA\s*=\s*\[", body):
+        raise RuntimeError(
+            f"{cfg['name']}: 'eventsMRNA' array not found. Page markup changed; "
+            f"re-inspect view-source of the events page.")
+    return body
+
+def _mrna_field(block: str, key: str) -> str:
+    m = re.search(r'(?<![A-Za-z])' + key + r'\s*:\s*"((?:[^"\\]|\\.)*)"', block)
+    return html.unescape(m.group(1)).strip() if m else ""
+
+def _mrna_clock(txt: str):
+    """'8:00 AM ET' -> (hour24, minute, tz). None if not a clock string."""
+    m = _MRNA_TIME.match((txt or "").strip())
+    if not m:
+        return None
+    hh, mm, ap = int(m.group(1)), int(m.group(2)), m.group(3).upper()
+    if not (1 <= hh <= 12 and 0 <= mm <= 59):
+        return None
+    if ap == "A":
+        hh = 0 if hh == 12 else hh
+    else:
+        hh = hh if hh == 12 else hh + 12
+    return hh, mm, (m.group(4) or "").upper()
+
+def parse_moderna(raw_html: str, cfg: dict) -> list:
+    events = []
+    if not raw_html:
+        return events
+    i = raw_html.find(_MRNA_MARKER)
+    if i == -1:
+        return events
+    j = raw_html.find("</script>", i)
+    text = raw_html[i:j] if j != -1 else raw_html[i:]
+    starts = [m.start() for m in re.finditer(r"\{\s*date\s*:", text)]
+    if not starts:
+        raise RuntimeError(
+            f"{cfg['name']}: found 'eventsMRNA' but no event objects in it. "
+            f"Page markup changed; re-inspect view-source.")
+    today = dt.datetime.now(dt.timezone.utc).date()
+    seen = set()
+    for n, s in enumerate(starts):
+        block = text[s:(starts[n + 1] if n + 1 < len(starts) else len(text))]
+        title = _mrna_field(block, "event")
+        date_txt = _mrna_field(block, "date")
+        if not title or not date_txt:
+            continue
+        try:
+            day = dt.datetime.strptime(date_txt, "%B %d, %Y")
+        except ValueError:
+            continue
+        clock = _mrna_clock(_mrna_field(block, "time"))
+        tz, offset, end_dt = "ET", None, None
+        if clock:
+            hh, mm, tz = clock[0], clock[1], (clock[2] or "ET")
+            naive = day.replace(hour=hh, minute=mm)
+            offset = _resolve_offset(tz, naive)
+        if clock and offset is not None:
+            start_dt = (naive - dt.timedelta(hours=offset)).replace(tzinfo=dt.timezone.utc)
+            all_day = False
+            ec = _mrna_clock(_mrna_field(block, "eventEnds") + " " + tz)
+            if ec:
+                e_naive = day.replace(hour=ec[0], minute=ec[1])
+                cand = (e_naive - dt.timedelta(hours=offset)).replace(tzinfo=dt.timezone.utc)
+                if start_dt < cand <= start_dt + dt.timedelta(hours=6):
+                    end_dt = cand
+        else:
+            start_dt = day.replace(hour=12, tzinfo=dt.timezone.utc)   # no time -> all-day
+            all_day, tz = True, "ET"
+        if start_dt.date() < today:                    # forward-looking only
+            continue
+        tags = ["investor event"] if _mrna_field(block, "investorEvents").lower() == "yes" else []
+        ev = Event(
+            company=cfg["name"], title=title, start_utc=start_dt, end_utc=end_dt,
+            tz_original=tz, event_type="unknown", source_url=cfg["endpoint"],
+            webcast_url=_mrna_field(block, "webcastURL"), location="",
+            tags=tags, all_day=all_day,
+        )
+        ev.uid = hashlib.sha1(
+            f"{cfg['name']}|{title}|{start_dt.date()}".encode()).hexdigest()[:16] + "@ir-calendar"
+        if ev.uid in seen:
+            continue
+        seen.add(ev.uid)
+        events.append(ev)
+    return events
+
+
 # 6. THE BOUNCER  (classify + decide keep/drop)
 # ---------------------------------------------------------------------------
 # ---------------------------------------------------------------------------
@@ -3274,6 +3382,7 @@ ADAPTERS = {
 	"regeneron": (fetch_regeneron, parse_regeneron),
 	"emd": (fetch_emd, parse_emd),
 	"bayer": (fetch_bayer, parse_bayer),
+	"moderna": (fetch_moderna, parse_moderna),
     "novartis": (fetch_novartis, parse_novartis),
     "gsk": (fetch_gsk, parse_gsk),
 }
@@ -3288,9 +3397,10 @@ _EMPTY_RAW = {
     "amgen": "",
     "abbvie": "",
     "sanofi": "",
-	 "regeneron": "",
+	"regeneron": "",
 	"emd": "",
 	"bayer": {"data": {"events": {"results": []}}},
+	"moderna": "",
     "novartis": "",
     "gsk": "",
 }
