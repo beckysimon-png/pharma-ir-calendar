@@ -312,13 +312,14 @@ COMPANIES = {
             "categoryIds": "12a0386c-f65b-4c88-a5de-1b94c030b02e",
             "pageSize": "50",
         },
-        "headers": {
+               "headers": {
             "Accept": "*/*",
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin",
         },
-		       # -- Alnylam ---------------------------------------------------------------
+    },
+    # -- Alnylam ---------------------------------------------------------------
     # Same text-parser family as Regeneron/Vertex. "Upcoming Events" heading,
     # then "Past Events". Dates look like "Oct 29, 2026 / 08:30 AM EDT"
     # (slash between date and time; handled in _REGN_DATE).
@@ -329,9 +330,7 @@ COMPANIES = {
         "endpoint": "https://investors.alnylam.com/events",
         "method": "GET",
     },
-    },
 }
-
 # ---------------------------------------------------------------------------
 # 2. THE BOUNCER'S RULEBOOK
 # ---------------------------------------------------------------------------
