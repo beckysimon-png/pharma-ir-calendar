@@ -1549,8 +1549,8 @@ def parse_regeneron(raw_html: str, cfg: dict) -> list:
         if not title:
             continue
         links = [l[2:-2] for l in chunk_lines if l.startswith("[[") and l.endswith("]]")]
-		links = [u for u in links
-				 if "google.com/calendar" not in u.lower() and "outlook" not in u.lower()]
+        links = [u for u in links
+                 if "google.com/calendar" not in u.lower() and "outlook" not in u.lower()]
         def _abs(u): return u if u.startswith("http") else cfg["ir_host"].rstrip("/") + u
         detail = next((_abs(u) for u in links if "event-details" in u), "")
         webcast = next((u for u in links
