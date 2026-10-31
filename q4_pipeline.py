@@ -318,7 +318,8 @@ ALLOW_TYPES = {
     "capital_markets_day": ["capital markets", "investor day", "cmd", "r&d day", "rnd day",
                             "pharma day", "meet novartis management", "meet the management",
                             "meet management"],
-    "agm":                 ["annual general meeting", "agm", "annual meeting"],
+        "agm":                 ["annual general meeting", "agm", "annual meeting",
+                            "annual stockholders", "annual shareholders"],
 }
 
 # Medical / scientific congresses you DO want (pipeline data readouts, symposia).
