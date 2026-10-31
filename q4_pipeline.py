@@ -318,6 +318,17 @@ COMPANIES = {
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin",
         },
+		       # -- Alnylam ---------------------------------------------------------------
+    # Same text-parser family as Regeneron/Vertex. "Upcoming Events" heading,
+    # then "Past Events". Dates look like "Oct 29, 2026 / 08:30 AM EDT"
+    # (slash between date and time; handled in _REGN_DATE).
+    "alnylam": {
+        "name": "Alnylam",
+        "adapter": "regeneron",
+        "ir_host": "https://investors.alnylam.com",
+        "endpoint": "https://investors.alnylam.com/events",
+        "method": "GET",
+    },
     },
 }
 
@@ -1512,7 +1523,7 @@ _REGN_MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun",
      "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 _REGN_DATE = re.compile(
-    r"\b([A-Z][a-z]{2,8})\.?\s+(\d{1,2}),?\s+(\d{4})\s+(?:at\s+)?"
+    r"\b([A-Z][a-z]{2,8})\.?\s+(\d{1,2}),?\s+(\d{4})\s+(?:(?:at|/)\s+)?"
     r"(\d{1,2}:\d{2})\s*([AaPp][Mm])\s+([A-Za-z]{2,4})\b")
 _REGN_END_HEADINGS = {"recent", "recent events", "past events", "archive", "archived events"}
 
