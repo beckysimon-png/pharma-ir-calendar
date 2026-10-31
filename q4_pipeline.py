@@ -311,15 +311,15 @@ COMPANIES = {
             "eventFolderId": "2348d921-4e9a-4170-b86b-59ea19146379",
             "categoryIds": "12a0386c-f65b-4c88-a5de-1b94c030b02e",
             "pageSize": "50",
-        },                      # <- closes "query"
+        },
         "headers": {
             "Accept": "*/*",
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin",
-        },                      # <- closes "headers"
-    },                          # <- closes "bayer"
-}                               # <- closes COMPANIES (column 0)
+        },
+    },
+}
 
 # ---------------------------------------------------------------------------
 # 2. THE BOUNCER'S RULEBOOK
