@@ -273,6 +273,17 @@ COMPANIES = {
         "endpoint": "https://investor.regeneron.com/events-and-presentations/events-and-recent",
         "method": "GET",
     },
+	    # -- Vertex --------------------------------------------------------------
+    # Same NASDAQ IR family as Regeneron/Lilly: "Upcoming events" table, then
+    # "Archived events", dates like "Nov 2, 2026 4:30 PM EST". Reuses the
+    # Regeneron text-parser adapter as-is.
+    "vertex": {
+        "name": "Vertex",
+        "adapter": "regeneron",
+        "ir_host": "https://investors.vrtx.com",
+        "endpoint": "https://investors.vrtx.com/news-events/events-presentations",
+        "method": "GET",
+    },
 }          # <-- add this line, at column 0
 
 # ---------------------------------------------------------------------------
@@ -1467,7 +1478,7 @@ _REGN_MONTHS = {m: i for i, m in enumerate(
 _REGN_DATE = re.compile(
     r"\b([A-Z][a-z]{2,8})\.?\s+(\d{1,2}),?\s+(\d{4})\s+(?:at\s+)?"
     r"(\d{1,2}:\d{2})\s*([AaPp][Mm])\s+([A-Za-z]{2,4})\b")
-_REGN_END_HEADINGS = {"recent", "recent events", "past events", "archive"}
+_REGN_END_HEADINGS = {"recent", "recent events", "past events", "archive", "archived events"}
 
 def fetch_regeneron(cfg: dict) -> str:
     body = _fetch_nir_html(cfg, "<")        # generic GET; we do our own check
