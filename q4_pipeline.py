@@ -284,6 +284,17 @@ COMPANIES = {
         "endpoint": "https://investors.vrtx.com/news-events/events-presentations",
         "method": "GET",
     },
+	    # -- Merck KGaA (EMD Group) ----------------------------------------------
+    # Adobe AEM site. "Upcoming Events" = several small Date/Event tables with
+    # date-only text ("November 12, 2026", ranges like "November 16-17, 2026")
+    # -> all-day events. Markup-agnostic text parser (see 5l).
+    "emd": {
+        "name": "Merck KGaA",
+        "adapter": "emd",
+        "ir_host": "https://www.emdgroup.com",
+        "endpoint": "https://www.emdgroup.com/en/investors/events-and-presentations.html",
+        "method": "GET",
+    },
 }          # <-- add this line, at column 0
 
 # ---------------------------------------------------------------------------
@@ -1565,6 +1576,119 @@ def parse_regeneron(raw_html: str, cfg: dict) -> list:
         )
         basis = f"{cfg['name']}|{title}|{start_dt.date()}"
         ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
+        events.append(ev)
+    return events
+	# ---------------------------------------------------------------------------
+# 5l. MERCK KGaA (EMD GROUP) ADAPTER  (AEM page; markup-agnostic text parse)
+# ---------------------------------------------------------------------------
+# Reuses _regn_lines (HTML -> text lines + [[url]] anchor lines). Dates are
+# date-only ("November 12, 2026" / "November 16-17, 2026") -> all-day events.
+# Raises (so the Action goes red) if the heading or the date lines are missing,
+# instead of silently returning 0 events from a JS-rendered page.
+_EMD_MON = (r"(Jan(?:uary)?|Feb(?:ruary)?|Mar(?:ch)?|Apr(?:il)?|May|Jun(?:e)?|"
+            r"Jul(?:y)?|Aug(?:ust)?|Sep(?:t(?:ember)?)?|Oct(?:ober)?|"
+            r"Nov(?:ember)?|Dec(?:ember)?)\.?")
+_EMD_DATE = re.compile(
+    r"^" + _EMD_MON + r"\s+(\d{1,2})"
+    r"(?:\s*[-\u2013]\s*(?:" + _EMD_MON + r"\s+)?(\d{1,2}))?"
+    r",\s*(\d{4})\b\s*(.*)$", re.I)
+_EMD_SKIP = {"date", "event", "events", "title", "type"}
+_EMD_END = {"webcasts & presentations", "explore more", "past events",
+            "archive", "archived events"}
+_EMD_BAD_LINK = ("google.com/calendar", "outlook.", ".ics", "/ical")
+
+def fetch_emd(cfg: dict) -> str:
+    body = _fetch_nir_html(cfg, "<")        # generic hardened GET
+    if "upcoming events" not in body.lower():
+        raise RuntimeError(
+            f"{cfg['name']}: no 'Upcoming Events' text in the page. "
+            f"Possible bot-challenge page or changed markup; "
+            f"re-inspect view-source of the events page.")
+    return body
+
+def _emd_link_ok(u: str) -> bool:
+    low = u.lower()
+    if not (low.startswith("http") or low.startswith("/")):
+        return False
+    return not any(b in low for b in _EMD_BAD_LINK)
+
+def parse_emd(raw_html: str, cfg: dict) -> list:
+    events = []
+    if not raw_html:
+        return events
+    today = dt.datetime.now(dt.timezone.utc).date()
+    lines = _regn_lines(raw_html)
+    try:
+        i0 = next(i for i, l in enumerate(lines) if l.lower() == "upcoming events")
+    except StopIteration:
+        raise RuntimeError(
+            f"{cfg['name']}: no 'Upcoming Events' heading line found. "
+            f"Page markup changed or is rendered client-side; "
+            f"re-inspect view-source of the events page.")
+    hits, limit = [], len(lines)
+    for i in range(i0 + 1, len(lines)):
+        if hits and lines[i].lower() in _EMD_END:
+            limit = i
+            break
+        m = _EMD_DATE.match(lines[i])
+        if m:
+            hits.append((i, m))
+    if not hits:
+        raise RuntimeError(
+            f"{cfg['name']}: found the 'Upcoming Events' heading but no date "
+            f"lines after it. The tables are probably filled in by JavaScript "
+            f"-- re-inspect view-source / DevTools for a JSON call.")
+    seen = set()
+    for n, (i, m) in enumerate(hits):
+        mon = _REGN_MONTHS.get(m.group(1)[:3].lower())
+        if not mon:
+            continue
+        try:
+            start_dt = dt.datetime(int(m.group(5)), mon, int(m.group(2)),
+                                   12, 0, tzinfo=dt.timezone.utc)
+        except ValueError:
+            continue
+        end_dt = None
+        if m.group(4):
+            mon2 = _REGN_MONTHS.get((m.group(3) or m.group(1))[:3].lower(), mon)
+            try:
+                cand = dt.datetime(int(m.group(5)), mon2, int(m.group(4)),
+                                   12, 0, tzinfo=dt.timezone.utc)
+                if cand >= start_dt:
+                    end_dt = cand
+            except ValueError:
+                pass
+        if (end_dt or start_dt).date() < today:        # forward-looking only
+            continue
+        stop = hits[n + 1][0] if n + 1 < len(hits) else limit
+        window = lines[i + 1:stop]
+        title = m.group(6).strip() or next(
+            (l for l in window
+             if not l.startswith("[[") and l.lower() not in _EMD_SKIP), "")
+        if not title:
+            continue
+        links = [l[2:-2] for l in window
+                 if l.startswith("[[") and l.endswith("]]") and _emd_link_ok(l[2:-2])]
+        host = cfg["ir_host"].split("//")[-1]
+        def _abs(u): return u if u.startswith("http") else cfg["ir_host"].rstrip("/") + u
+        detail = next((_abs(u) for u in links
+                       if u.startswith("/") or host in u
+                       or "emdgroup.com" in u.lower()), "")
+        webcast = next((u for u in links
+                        if u.startswith("http") and "emdgroup.com" not in u.lower()
+                        and host not in u
+                        and not u.lower().endswith((".pdf", ".xlsx", ".doc", ".docx"))), "")
+        ev = Event(
+            company=cfg["name"], title=title, start_utc=start_dt, end_utc=end_dt,
+            tz_original="CET", event_type="unknown",
+            source_url=detail or cfg["endpoint"], webcast_url=webcast,
+            location="", tags=[], all_day=True,
+        )
+        basis = f"{cfg['name']}|{title}|{start_dt.date()}"
+        ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
+        if ev.uid in seen:
+            continue
+        seen.add(ev.uid)
         events.append(ev)
     return events
 
@@ -2984,6 +3108,7 @@ ADAPTERS = {
     "abbvie": (fetch_abbvie, parse_abbvie),
     "sanofi": (fetch_sanofi, parse_sanofi),
 	"regeneron": (fetch_regeneron, parse_regeneron),
+	"emd": (fetch_emd, parse_emd),
     "novartis": (fetch_novartis, parse_novartis),
     "gsk": (fetch_gsk, parse_gsk),
 }
@@ -2999,6 +3124,7 @@ _EMPTY_RAW = {
     "abbvie": "",
     "sanofi": "",
 	 "regeneron": "",
+	"emd": "",
     "novartis": "",
     "gsk": "",
 }
