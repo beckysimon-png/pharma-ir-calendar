@@ -1505,7 +1505,7 @@ def parse_abbvie(raw_html: str, cfg: dict) -> list:
         ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
         events.append(ev)
     return events
-	# ---------------------------------------------------------------------------
+	
 # 5k. REGENERON ADAPTER  (NASDAQ IR platform; markup-agnostic text parse)
 # ---------------------------------------------------------------------------
 _REGN_MONTHS = {m: i for i, m in enumerate(
@@ -1603,7 +1603,7 @@ def parse_regeneron(raw_html: str, cfg: dict) -> list:
         ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
         events.append(ev)
     return events
-	# ---------------------------------------------------------------------------
+	
 # 5l. MERCK KGaA (EMD GROUP) ADAPTER  (AEM page; markup-agnostic text parse)
 # ---------------------------------------------------------------------------
 # Reuses _regn_lines (HTML -> text lines + [[url]] anchor lines). Dates are
@@ -1716,86 +1716,136 @@ def parse_emd(raw_html: str, cfg: dict) -> list:
         seen.add(ev.uid)
         events.append(ev)
     return events
-	# ---------------------------------------------------------------------------
-# 5m. BAYER ADAPTER  (own CMS; markup-agnostic text parse, all-day events)
 # ---------------------------------------------------------------------------
-# Reuses _regn_lines. Date headings look like "Tuesday, November 03, 2026";
-# the time lines under them are unreliable CMS stamps, so they are skipped and
-# every event is all-day. Raises (Action goes red) if no date headings exist.
-_BAYER_DATE = re.compile(r"^[A-Za-z]+day,\s+([A-Za-z]+)\s+(\d{1,2}),\s+(\d{4})$")
-_BAYER_TIME = re.compile(r"^\d{1,2}:\d{2}\s*[AaPp]Mm?$")
-_BAYER_NOISE = {"more", "add to calendar", "recording", "recording (audio)",
-                "handout", "recording (audio) handout", "register", "watch",
-                "download", "presentation", "presentations", "upcoming events"}
-_BAYER_END = {"key past events", "key past events and archive", "past events",
-              "events archive", "archive"}
+# 5m. BAYER ADAPTER  (Sitecore/Next.js; events come from a JSON API call)
+# ---------------------------------------------------------------------------
+# Response: {"data":{"events":{"total","results":[{id,eventTitle.value,
+#   startDate.dateValue,endDate.dateValue (epoch ms),timeZone.name,
+#   showTimeOnWebsite,link.url}],"hasNext","mode":"future"}}}
+# TRAP: the epoch values are LOCAL wall-clock time stamped as UTC. We read the
+# naive wall clock and apply the real offset from timeZone. Only rows with
+# showTimeOnWebsite == "1" are trusted as timed; the rest are DATE-only.
+def _bayer_ms(ms):
+    """Epoch milliseconds -> aware UTC datetime."""
+    return (dt.datetime(1970, 1, 1, tzinfo=dt.timezone.utc)
+            + dt.timedelta(milliseconds=int(ms)))
 
-def fetch_bayer(cfg: dict) -> str:
-    body = _fetch_nir_html(cfg, "<")        # generic hardened GET
-    if "investor events" not in body.lower():
+def _bayer_val(node, *path):
+    """Safe nested get: _bayer_val(e, 'startDate', 'dateValue')."""
+    for p in path:
+        if not isinstance(node, dict):
+            return None
+        node = node.get(p)
+    return node
+
+def fetch_bayer(cfg: dict) -> dict:
+    """Call Bayer's events API (the call the events page makes in the browser)
+    and return its JSON. Raises loudly so the Action goes red, never ships empty."""
+    endpoint = cfg.get("endpoint", "")
+    if not endpoint.startswith("http"):
+        raise RuntimeError(f"{cfg['name']}: no API endpoint configured.")
+    headers = {
+        "User-Agent": ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                       "AppleWebKit/537.36 (KHTML, like Gecko) "
+                       "Chrome/153.0.0.0 Safari/537.36"),
+        "Accept": "application/json, text/plain, */*",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Origin": cfg["ir_host"].rstrip("/"),
+        "Referer": cfg["ir_host"].rstrip("/") + "/en/investors/events",
+    }
+    headers.update(cfg.get("headers") or {})
+    data, url, method = None, endpoint, "GET"
+    if cfg.get("body") is not None:
+        method = "POST"
+        headers["Content-Type"] = "application/json"
+        data = json.dumps(cfg["body"]).encode("utf-8")
+    elif cfg.get("query"):
+        url = endpoint + ("&" if "?" in endpoint else "?") + \
+            urllib.parse.urlencode(cfg["query"])
+    req = urllib.request.Request(url, data=data, headers=headers, method=method)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            body = resp.read().decode("utf-8", "replace")
+    except urllib.error.HTTPError as e:
+        detail = e.read().decode("utf-8", "replace")[:400]
         raise RuntimeError(
-            f"{cfg['name']}: no 'Investor Events' text in the page. "
-            f"Possible bot-challenge page or changed markup; "
-            f"re-inspect view-source of the events page.")
-    return body
+            f"{cfg['name']}: HTTP {e.code} from {url}\n"
+            f"  -> re-capture the events request from DevTools.\n"
+            f"  server said: {detail}") from None
+    except urllib.error.URLError as e:
+        raise RuntimeError(f"{cfg['name']}: could not reach {url} ({e.reason})") from None
+    try:
+        parsed = json.loads(body)
+    except json.JSONDecodeError:
+        raise RuntimeError(
+            f"{cfg['name']}: response was not JSON (first 300 chars):\n{body[:300]}"
+        ) from None
+    ev = _bayer_val(parsed, "data", "events")
+    if not isinstance(ev, dict) or not isinstance(ev.get("results"), list):
+        raise RuntimeError(
+            f"{cfg['name']}: JSON had no data.events.results list. "
+            f"Got: {str(parsed)[:200]}")
+    if ev.get("hasNext"):
+        print(f"  {cfg['name']}: WARNING API says more pages exist "
+              f"(hasNext=true, endCursor={ev.get('endCursor')!r}); only page 1 read.")
+    return parsed
 
-def parse_bayer(raw_html: str, cfg: dict) -> list:
+def parse_bayer(raw_json: dict, cfg: dict) -> list:
     events = []
-    if not raw_html:
-        return events
+    rows = _bayer_val(raw_json, "data", "events", "results") or []
     today = dt.datetime.now(dt.timezone.utc).date()
-    lines = _regn_lines(raw_html)
-    heads, limit = [], len(lines)
-    for i, l in enumerate(lines):
-        if heads and l.lower() in _BAYER_END:
-            limit = i
-            break
-        m = _BAYER_DATE.match(l)
-        if m:
-            heads.append((i, m))
-    if not heads:
-        raise RuntimeError(
-            f"{cfg['name']}: no 'Weekday, Month DD, YYYY' date headings found. "
-            f"Page markup changed or is rendered client-side; "
-            f"re-inspect view-source / DevTools for a JSON call.")
-    seen = set()
-    for n, (i, m) in enumerate(heads):
-        try:
-            day = dt.datetime.strptime(
-                f"{m.group(1)} {int(m.group(2))}, {m.group(3)}", "%B %d, %Y")
-        except ValueError:
+    for e in rows:
+        title = html.unescape(str(_bayer_val(e, "eventTitle", "value") or "")).strip()
+        s_ms = _bayer_val(e, "startDate", "dateValue")
+        if not title or not isinstance(s_ms, (int, float)):
             continue
-        if day.date() < today:                         # forward-looking only
+        start = _bayer_ms(s_ms)
+        e_ms = _bayer_val(e, "endDate", "dateValue")
+        end = _bayer_ms(e_ms) if isinstance(e_ms, (int, float)) else None
+        tz = str(_bayer_val(e, "timeZone", "name") or "").strip().upper()
+        show_time = str(e.get("showTimeOnWebsite") or "").strip().lower() in ("1", "true")
+        # TRAP: epoch values are LOCAL wall-clock stamped as if UTC.
+        naive = start.replace(tzinfo=None)
+        offset = _resolve_offset(tz or "CET", naive)
+        if offset is None:
+            tz, offset = "CET", _resolve_offset("CET", naive)
+        tz = tz or "CET"
+        if show_time:
+            start_dt = (naive - dt.timedelta(hours=offset)).replace(tzinfo=dt.timezone.utc)
+            end_dt = None
+            if end and dt.timedelta(0) < (end - start) <= dt.timedelta(hours=4):
+                end_dt = (end.replace(tzinfo=None)
+                          - dt.timedelta(hours=offset)).replace(tzinfo=dt.timezone.utc)
+            all_day = False
+            last_day = start.date()
+        else:
+            d0 = start.date()
+            start_dt = dt.datetime(d0.year, d0.month, d0.day, 12, 0, tzinfo=dt.timezone.utc)
+            end_dt, last_day = None, d0
+            if end and end.date() > d0:
+                last_day = end.date()
+                end_dt = dt.datetime(last_day.year, last_day.month, last_day.day,
+                                     12, 0, tzinfo=dt.timezone.utc)
+            all_day = True
+        if last_day < today:                           # forward-looking only
             continue
-        start_dt = day.replace(hour=12, tzinfo=dt.timezone.utc)   # all-day
-        stop = heads[n + 1][0] if n + 1 < len(heads) else limit
-        for j in range(i + 1, stop):
-            t = lines[j]
-            low = t.lower()
-            if (t.startswith("[[") or _BAYER_TIME.match(t) or low in _BAYER_NOISE
-                    or low.startswith("media contact")):
-                continue
-            prev = lines[j - 1] if j - 1 > i else ""
-            href = prev[2:-2] if prev.startswith("[[") and prev.endswith("]]") else ""
-            if href and not any(b in href.lower()
-                                for b in ("google.com/calendar", "outlook.", ".ics", "/ical")):
-                source_url = (href if href.startswith("http")
-                              else cfg["ir_host"].rstrip("/") + href)
-            else:
-                source_url = cfg["endpoint"]
-            ev = Event(
-                company=cfg["name"], title=t, start_utc=start_dt, end_utc=None,
-                tz_original="CET", event_type="unknown", source_url=source_url,
-                webcast_url="", location="", tags=[], all_day=True,
-            )
-            basis = f"{cfg['name']}|{t}|{start_dt.date()}"
-            ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
-            if ev.uid in seen:
-                continue
-            seen.add(ev.uid)
-            events.append(ev)
+        link = str(_bayer_val(e, "link", "url") or "").strip()
+        if link.startswith("/"):
+            source_url = cfg["ir_host"].rstrip("/") + link
+        elif link.startswith("http"):
+            source_url = link
+        else:
+            source_url = cfg["ir_host"].rstrip("/") + "/en/investors/events"
+        ev = Event(
+            company=cfg["name"], title=title, start_utc=start_dt, end_utc=end_dt,
+            tz_original=tz, event_type="unknown", source_url=source_url,
+            webcast_url="", location="", tags=[], all_day=all_day,
+        )
+        eid = str(e.get("id") or "")
+        basis = f"{cfg['name']}|{eid}" if eid else f"{cfg['name']}|{title}|{start_dt.date()}"
+        ev.uid = hashlib.sha1(basis.encode()).hexdigest()[:16] + "@ir-calendar"
+        events.append(ev)
     return events
-
 
 # 6. THE BOUNCER  (classify + decide keep/drop)
 # ---------------------------------------------------------------------------
@@ -3230,7 +3280,7 @@ _EMPTY_RAW = {
     "sanofi": "",
 	 "regeneron": "",
 	"emd": "",
-	"bayer": "",
+	"bayer": {"data": {"events": {"results": []}}},
     "novartis": "",
     "gsk": "",
 }
