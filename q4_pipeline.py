@@ -299,7 +299,7 @@ COMPANIES = {
     # Own CMS. Upcoming events = "Weekday, Month DD, YYYY" headings, each with
     # time + title rows. Times look like CMS stamps (12:23 am, 12:33 am...),
     # so DATE ONLY -> all-day. Markup-agnostic text parser (see 5m).
-        "bayer": {
+       "bayer": {
         "name": "Bayer",
         "adapter": "bayer",
         "ir_host": "https://www.bayer.com",
@@ -309,16 +309,17 @@ COMPANIES = {
             "language": "en",
             "mode": "future",
             "eventFolderId": "2348d921-4e9a-4170-b86b-59ea19146379",
-            "categoryIds": "12a0386c-f65b-4c88-a5de-1b94c030b02e",   # "Investors"
+            "categoryIds": "12a0386c-f65b-4c88-a5de-1b94c030b02e",
             "pageSize": "50",
-        },
+        },                      # <- closes "query"
         "headers": {
             "Accept": "*/*",
             "Sec-Fetch-Dest": "empty",
             "Sec-Fetch-Mode": "cors",
             "Sec-Fetch-Site": "same-origin",
-        },
-}          # <-- add this line, at column 0
+        },                      # <- closes "headers"
+    },                          # <- closes "bayer"
+}                               # <- closes COMPANIES (column 0)
 
 # ---------------------------------------------------------------------------
 # 2. THE BOUNCER'S RULEBOOK
