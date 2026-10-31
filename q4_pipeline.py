@@ -348,9 +348,9 @@ COMPANIES = {
 ALLOW_TYPES = {
     "earnings_call":       ["earnings", "quarter", "q1", "q2", "q3", "q4", "full year",
                             "results", "sales"],
-    "capital_markets_day": ["capital markets", "investor day", "cmd", "r&d day", "rnd day",
+        "capital_markets_day": ["capital markets", "investor day", "cmd", "r&d day", "rnd day",
                             "pharma day", "meet novartis management", "meet the management",
-                            "meet management"],
+                            "meet management", "investor event"],
         "agm":                 ["annual general meeting", "agm", "annual meeting",
                             "annual stockholders", "annual shareholders"],
 }
