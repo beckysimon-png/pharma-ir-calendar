@@ -266,13 +266,14 @@ COMPANIES = {
     # NASDAQ IR (Drupal) platform, same family as Lilly/Amgen/AbbVie, but a
     # FOURTH rendering: "Upcoming events" + "Recent" on one page, dates like
     # "Oct 30, 2026 8:30 AM EDT". Markup-agnostic text parser (see 5k).
-    "regeneron": {
+      "regeneron": {
         "name": "Regeneron",
         "adapter": "regeneron",
         "ir_host": "https://investor.regeneron.com",
         "endpoint": "https://investor.regeneron.com/events-and-presentations/events-and-recent",
         "method": "GET",
     },
+}          # <-- add this line, at column 0
 
 # ---------------------------------------------------------------------------
 # 2. THE BOUNCER'S RULEBOOK
@@ -1480,12 +1481,14 @@ def fetch_regeneron(cfg: dict) -> str:
             f"re-inspect view-source of the events page.")
     return body
 
+_REGN_ANCHOR = re.compile(r"""<a\b[^>]*?href="'["'][^>]*>""", re.I | re.S)
+
 def _regn_lines(raw_html: str) -> list:
     """HTML -> clean text lines. Anchors survive as '[[url]]' lines so the
     detail/webcast links can still be recovered after tags are stripped."""
     s = re.sub(r"(?is)<(script|style)\b.*?</\1>", " ", raw_html)
-    s = re.sub(r'(?is)<a\b[^>]*?href="\'["\'][^>]*>',
-               lambda m: "\n[[" + html.unescape(m.group(1)).strip() + "]]\n", s)
+    s = _REGN_ANCHOR.sub(
+        lambda m: "\n[[" + html.unescape(m.group(1)).strip() + "]]\n", s)
     s = re.sub(r"(?s)<[^>]+>", "\n", s)
     s = html.unescape(s)
     out = []
@@ -2967,6 +2970,7 @@ ADAPTERS = {
     "amgen": (fetch_amgen, parse_amgen),
     "abbvie": (fetch_abbvie, parse_abbvie),
     "sanofi": (fetch_sanofi, parse_sanofi),
+	"regeneron": (fetch_regeneron, parse_regeneron),
     "novartis": (fetch_novartis, parse_novartis),
     "gsk": (fetch_gsk, parse_gsk),
 }
@@ -2981,6 +2985,7 @@ _EMPTY_RAW = {
     "amgen": "",
     "abbvie": "",
     "sanofi": "",
+	 "regeneron": "",
     "novartis": "",
     "gsk": "",
 }
