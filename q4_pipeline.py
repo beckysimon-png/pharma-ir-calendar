@@ -371,6 +371,14 @@ MEDICAL_CONFERENCES = [
 # months that we drop. So JPM is NOT in the generic broker list below.
 JPM_NAMES = ["j.p. morgan", "jp morgan", "jpmorgan", "jpm ", "j p morgan"]
 
+# Event formats you ALWAYS want, for ANY company. Lowercase substrings of the title.
+# Checked before the broker / hard-block rules, so they can't be bounced by them.
+# Value = event_type label written into the .ics description.
+ALWAYS_KEEP = {
+    "enterprise business review": "business_review",   # J&J EBR (Dec 2023, Dec 2026...)
+    "business review":            "business_review",   # J&J 2021 "Business Review"-style events
+}
+
 # Sell-side / broker-hosted investor conferences you do NOT want.
 # Bank names are distinctive, so plain substring matching is safe here.
 BROKER_NAMES = [
@@ -2128,6 +2136,12 @@ def should_post(ev: Event) -> tuple:
             ev.event_type = "jpm_healthcare"
             return True, "allowed (J.P. Morgan Healthcare Conf - January exception)"
         return False, "blocked (J.P. Morgan broker conf outside January)"
+
+	    # 0b. MUST-KEEP FORMATS (global override list).
+    keep_phrase = next((p for p in ALWAYS_KEEP if p in hay), None)
+    if keep_phrase:
+        ev.event_type = ALWAYS_KEEP[keep_phrase]
+        return True, f"allowed (always-keep: {keep_phrase!r})"
 
     # 1. Sell-side / broker-hosted conference -> always drop.
     broker = next((b for b in BROKER_NAMES if b in hay), None)
