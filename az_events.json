@@ -1,81 +1,6 @@
 {
   "future":  [
     {
-      "month":"October",
-      "year":"2026",
-      "entry":      [
-        {
-          "title":"Call Series, Barclays Cardio Pipeline Investor Call, Virtual [Management]",
-          "href":"",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-10-05T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"5"
-            }
-          },
-          "actions":          {
-
-          }
-        },
-        {
-          "title":"ASBMR, AZN Meet the Management, Virtual [Management]",
-          "href":"/content/astraz/investor-relations/meet-the-management-event-at-ASBMR-2026.html",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-10-12T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"12"
-            }
-          },
-          "actions":          {
-            "add":            {
-              "label":"Add to calendar",
-              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/futureEventsMonths/eventslistingmonth_669594900/eventCards/eventslistingcard_703056806.event.ics"
-            }
-          }
-        },
-        {
-          "title":"ESMO, AZN Meet the Management, Madrid, Hybrid [Management]",
-          "href":"/content/astraz/investor-relations/meet-the-management-event-at-esmo-2026.html",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-10-26T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"26"
-            }
-          },
-          "actions":          {
-            "add":            {
-              "label":"Add to calendar",
-              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/futureEventsMonths/eventslistingmonth_669594900/eventCards/eventslistingcard.event.ics"
-            }
-          }
-        },
-        {
-          "title":"AZN 9M and Q3 2026 results",
-          "href":"/content/astraz/investor-relations/9m-and-q3-2026-results-event.html",
-          "rel":"",
-          "date":          {
-            "timestamp":"2026-10-30T00:00:00.000+0000",
-            "divider":"",
-            "start":            {
-              "day":"30"
-            }
-          },
-          "actions":          {
-            "add":            {
-              "label":"Add to Calendar",
-              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/futureEventsMonths/eventslistingmonth_669594900/eventCards/eventslistingcard_386537815.event.ics"
-            }
-          }
-        }
-      ]
-    },
-    {
       "month":"November",
       "year":"2026",
       "entry":      [
@@ -287,6 +212,81 @@
     }
   ],
   "past":  [
+    {
+      "month":"October",
+      "year":"2026",
+      "entry":      [
+        {
+          "title":"AZN 9M and Q3 2026 results",
+          "href":"/content/astraz/investor-relations/9m-and-q3-2026-results-event.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-30T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"30"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to Calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_1514385744/eventCards/eventslistingcard_1782248450.event.ics"
+            }
+          }
+        },
+        {
+          "title":"ESMO, AZN Meet the Management, Madrid, Hybrid [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-esmo-2026.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-26T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"26"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_1514385744/eventCards/eventslistingcard.event.ics"
+            }
+          }
+        },
+        {
+          "title":"ASBMR, AZN Meet the Management, Virtual [Management]",
+          "href":"/content/astraz/investor-relations/meet-the-management-event-at-ASBMR-2026.html",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-12T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"12"
+            }
+          },
+          "actions":          {
+            "add":            {
+              "label":"Add to calendar",
+              "href":"/content/astraz/investor-relations/events/jcr:content/par/contentwrapper/wrapperPar/eventslistingcontain_1772792074/pastEventsMonths/eventslistingmonth_1514385744/eventCards/eventslistingcard_703056806.event.ics"
+            }
+          }
+        },
+        {
+          "title":"Call Series, Barclays Cardio Pipeline Investor Call, Virtual [Management]",
+          "href":"",
+          "rel":"",
+          "date":          {
+            "timestamp":"2026-10-05T00:00:00.000+0000",
+            "divider":"",
+            "start":            {
+              "day":"5"
+            }
+          },
+          "actions":          {
+
+          }
+        }
+      ]
+    },
     {
       "month":"September",
       "year":"2026",
