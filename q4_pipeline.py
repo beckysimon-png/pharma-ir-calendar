@@ -375,8 +375,9 @@ JPM_NAMES = ["j.p. morgan", "jp morgan", "jpmorgan", "jpm ", "j p morgan"]
 # Checked before the broker / hard-block rules, so they can't be bounced by them.
 # Value = event_type label written into the .ics description.
 ALWAYS_KEEP = {
-    "enterprise business review": "business_review",   # J&J EBR (Dec 2023, Dec 2026...)
-    "business review":            "business_review",   # J&J 2021 "Business Review"-style events
+    "enterprise business review": "business_review",
+    "business review": "business_review",
+    "innovation day": "capital_markets_day",
 }
 
 # Sell-side / broker-hosted investor conferences you do NOT want.
@@ -1153,23 +1154,36 @@ def _lilly_strip_tags(fragment: str) -> str:
     return html.unescape(re.sub(r"<[^>]+>", " ", fragment)).strip()
 
 def _lilly_parse_ts(date_txt: str):
-    """'October 29, 2026 at 10:00 AM EDT' -> (utc_datetime, tz_label).
-    Returns (None, '') if unparseable (so a malformed row is skipped, not fatal)."""
-    m = re.match(r"(.+?)\s+at\s+(\d{1,2}:\d{2}\s*[AaPp][Mm])\s+([A-Za-z]{2,4})\s*$",
-                 date_txt.strip())
+    """Return (start_utc, end_utc, timezone), or (None, None, '')."""
+    s = re.sub(r"\s+", " ", date_txt).strip()
+    m = re.fullmatch(
+        r"(.+?)\s+(?:at|from)\s+"
+        r"(\d{1,2}:\d{2}\s*[AP]M)"
+        r"(?:\s+to\s+(\d{1,2}:\d{2}\s*[AP]M))?"
+        r"\s+([A-Za-z]{2,4})",
+        s, re.I,
+    )
     if not m:
-        return None, ""
-    day_s = m.group(1).strip()
-    time_s = re.sub(r"\s+", " ", m.group(2).strip().upper())
-    tz = m.group(3).strip().upper()
+        return None, None, ""
+
+    def convert(clock):
+        naive = dt.datetime.strptime(
+            f"{m.group(1)} {clock.upper()}",
+            "%B %d, %Y %I:%M %p",
+        )
+        offset = _resolve_offset(m.group(4).upper(), naive)
+        if offset is None:
+            raise ValueError("Unknown timezone")
+        return (naive - dt.timedelta(hours=offset)).replace(
+            tzinfo=dt.timezone.utc
+        )
+
     try:
-        naive = dt.datetime.strptime(f"{day_s} {time_s}", "%B %d, %Y %I:%M %p")
+        start = convert(m.group(2))
+        end = convert(m.group(3)) if m.group(3) else None
     except ValueError:
-        return None, ""
-    offset = _resolve_offset(tz, naive)
-    if offset is None:
-        return None, ""
-    return (naive - dt.timedelta(hours=offset)).replace(tzinfo=dt.timezone.utc), tz
+        return None, None, ""
+    return start, end, m.group(4).upper()
 
 def parse_lilly(raw_html: str, cfg: dict) -> list:
     events = []
@@ -1188,7 +1202,7 @@ def parse_lilly(raw_html: str, cfg: dict) -> list:
         dm = re.search(r'nir-widget--event--date"\s*>(.*?)</div>', row, re.S)
         if not dm:
             continue
-        start_dt, tz = _lilly_parse_ts(_lilly_strip_tags(dm.group(1)))
+        start_dt, end_dt, tz = _lilly_parse_ts(_lilly_strip_tags(dm.group(1)))
         if start_dt is None:
             continue
         if start_dt.date() < today:                    # forward-looking only
@@ -1212,7 +1226,7 @@ def parse_lilly(raw_html: str, cfg: dict) -> list:
             company=cfg["name"],
             title=title,
             start_utc=start_dt,
-            end_utc=None,
+            end_utc=end_dt,
             tz_original=tz,
             event_type="unknown",
             source_url=source_url,
