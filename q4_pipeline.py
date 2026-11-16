@@ -288,13 +288,7 @@ COMPANIES = {
     # Adobe AEM site. "Upcoming Events" = several small Date/Event tables with
     # date-only text ("November 12, 2026", ranges like "November 16-17, 2026")
     # -> all-day events. Markup-agnostic text parser (see 5l).
-    "emd": {
-        "name": "Merck KGaA",
-        "adapter": "emd",
-        "ir_host": "https://www.emdgroup.com",
-        "endpoint": "https://www.emdgroup.com/en/investors/events-and-presentations.html",
-        "method": "GET",
-    },
+    
 	    # -- Bayer ---------------------------------------------------------------
     # Own CMS. Upcoming events = "Weekday, Month DD, YYYY" headings, each with
     # time + title rows. Times look like CMS stamps (12:23 am, 12:33 am...),
